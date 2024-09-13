@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.div_menu 
+
+{
+
+	margin:0px auto;
+
+	width:589px;	
+
+	font-family: Tahoma, Geneva, sans-serif;
+
+	/*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/	
+
+	/*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+
+	/*font-family: Tahoma, Geneva, sans-serif;*/
+
+	background-color:#035da3;
+
+	margin: auto auto;
+
+	margin-top:15%;
+
+	padding:5px;
+
+}
+
+div a 
+
+{
+
+	font-weight:bold;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 100%;
+
+    padding: 5px;
+
+    display:inline-block;
+
+	border-right:2px solid #FFF;
+
+}
+
+ul 
+
+{
+
+  display: inline;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+ul li 
+
+{
+
+	display: inline-block;
+
+}
+
+ul li:hover 
+
+{	
+
+/*	background-color:#db1a00; /*rojo*/
+
+
+
+background: #b4e391; 
+
+background: -moz-linear-gradient(top, #b4e391 0%, #035da3 50%, #b4e391 100%); 
+
+background: -webkit-linear-gradient(top, #b4e391 0%,#035da3 50%,#b4e391 100%); 
+
+background: linear-gradient(to bottom, #b4e391 0%,#035da3 50%,#b4e391 100%); 
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 ); 
+
+
+
+	}
+
+ul li:hover ul 
+
+{
+
+	display: block;
+
+}
+
+ul li ul
+
+{
+
+  position: absolute;
+
+  width:15%;  
+
+  display: none;
+
+}
+
+ul li ul li
+
+{ 
+
+  background: #29b2e6;
+
+  text-align:left;
+
+  font-family: Tahoma, Geneva, sans-serif;
+
+  display: block;
+
+  border-bottom:2px solid #FFF;
+
+  border-width:50%;
+
+}
+
+ul li ul li a
+
+{
+
+	display:block !important;
+
+} 
+
+ul li ul li:hover
+
+{
+
+	/*background: #7fcdec;*/
+
+	background: #29b2e6; 
+
+background: -moz-linear-gradient(top, #29b2e6 0%, #509ebb 50%, #7dba4f 80%); 
+
+background: -webkit-linear-gradient(top, #29b2e6 0%,#509ebb 50%,#7dba4f 80%); 
+
+background: linear-gradient(to bottom, #29b2e6 0%,#509ebb 50%,#7dba4f 80%); 
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b2e6', endColorstr='#29b2e6',GradientType=0 ); 
+
+}
+

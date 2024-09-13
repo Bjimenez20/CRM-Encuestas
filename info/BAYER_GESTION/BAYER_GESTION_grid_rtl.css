@@ -1,0 +1,90 @@
+.css_gestiones_id_gestion_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_gestiones_id_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_motivo_comunicacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_motivo_comunicacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_medio_contacto_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_medio_contacto_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_tipo_llamada_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_tipo_llamada_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_logro_comunicacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_logro_comunicacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_motivo_no_comunicacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_motivo_no_comunicacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_numero_intentos_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_numero_intentos_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_esperado_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_esperado_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_estado_ctc_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_estado_ctc_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_estado_farmacia_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_estado_farmacia_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_reclamo_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_reclamo_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_consecutivo_betaferon_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_consecutivo_betaferon_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_causa_no_reclamacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_causa_no_reclamacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_dificultad_acceso_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_dificultad_acceso_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_tipo_dificultad_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_tipo_dificultad_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_envios_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_envios_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_medicamentos_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_medicamentos_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_tipo_envio_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_tipo_envio_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_evento_adverso_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_evento_adverso_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_tipo_evento_adverso_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_tipo_evento_adverso_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_genera_solicitud_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_genera_solicitud_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_fecha_proxima_llamada_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_fecha_proxima_llamada_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_motivo_proxima_llamada_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_motivo_proxima_llamada_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_observacion_proxima_llamada_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_observacion_proxima_llamada_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_fecha_reclamacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_fecha_reclamacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_numero_cajas_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_numero_cajas_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_consecutivo_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_consecutivo_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_autor_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_autor_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_nota_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_nota_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_descripcion_comunicacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_descripcion_comunicacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_fecha_programada_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_fecha_programada_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_usuario_asigando_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_usuario_asigando_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_id_paciente_fk2_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_gestiones_id_paciente_fk2_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_fecha_comunicacion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_fecha_comunicacion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_estado_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_estado_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_codigo_argus_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_codigo_argus_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_autor_modificacion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_autor_modificacion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_numero_nebulizaciones_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_numero_nebulizaciones_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_fecha_subido_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_fecha_subido_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_numero_tabletas_diarias_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_numero_tabletas_diarias_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_brindo_apoyo_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_brindo_apoyo_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_paap_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_paap_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_sub_paap_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_sub_paap_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_barrera_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_barrera_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_informacion_aplicaciones_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_informacion_aplicaciones_grid_line {vertical-align: top;text-align: right;}

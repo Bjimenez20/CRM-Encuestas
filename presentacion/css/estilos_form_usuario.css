@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/* CSS Document */
+th {
+	padding: 1px;
+	color: #FFF;
+	background-color: #0C68B0;
+}
+
+input[type=text]:focus {
+	outline: 2px solid #000;
+	border-radius: 5px;
+}
+
+.btn_buscar {
+	background-position: center;
+	background-image: url(../imagenes/buscar.png);
+	background-color: inherit;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	color: transparent;
+}
+
+.btn_exp {
+	background-position: center;
+	background-image: url(../imagenes/exportar.png);
+	background-color: inherit;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	color: transparent;
+}
+
+.btn_iniar {
+	padding-top: 7%;
+	background-image: url(../imagenes/BTN_LOGIN.png);
+	background-repeat: no-repeat;
+	width: 152px;
+	height: 37px;
+	color: transparent;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+.btn_iniar:active {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+.btn_iniar:hover {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+input[type='text'] {
+	width: 60%;
+	height: 30px;
+	font-size: 100%;
+}
+
+select {
+	width: 60%;
+	height: 30px;
+	font-size: 100%;
+}
+
+input[type='label'] {
+	width: 30%;
+	height: 40%;
+	font-size: 100%;
+	border-radius: 5px;
+}
+
+.ifra2 {
+	width: 99%;
+	padding-top: 1%;
+	border: 0px solid #000;
+	margin-left: -0.5%;
+}
+
+.letra {
+	font-family: Tahoma, Geneva, sans-serif;
+}

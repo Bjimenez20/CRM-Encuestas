@@ -1,0 +1,30 @@
+.css_pacientes_id_paciente_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_pacientes_id_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_estado_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_estado_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_fecha_activacion_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_fecha_activacion_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_fecha_retiro_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_fecha_retiro_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_motivo_retiro_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_motivo_retiro_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_identificacion_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_identificacion_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_observacion_motivo_retiro_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_observacion_motivo_retiro_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_nombre_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_nombre_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_apellido_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_apellido_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_telefono_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_telefono_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_id_ultima_gestion_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_pacientes_id_ultima_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_id_gestion_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_gestiones_id_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_motivo_comunicacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_motivo_comunicacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_fecha_programada_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_fecha_programada_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_fecha_comunicacion_label {text-align:center;vertical-align:middle;font-weight:bold;}
+.css_gestiones_fecha_comunicacion_grid_line {vertical-align: top;text-align: center;}

@@ -1,0 +1,78 @@
+.css_id_paciente_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_id_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_logro_comunicacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_logro_comunicacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_fecha_comunicacion_label {text-align:center;vertical-align:middle;font-weight:bold;}
+.css_fecha_comunicacion_grid_line {vertical-align: top;text-align: center;}
+.css_autor_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_autor_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_departamento_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_departamento_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_ciudad_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_ciudad_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_estado_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_estado_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_status_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_status_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_fecha_activacion_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_fecha_activacion_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_fecha_retiro_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_fecha_retiro_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_motivo_retiro_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_motivo_retiro_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_fecha_inicio_terapia_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_fecha_inicio_terapia_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_codigo_xofigo_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_codigo_xofigo_grid_line {vertical-align: top;text-align: right;}
+.css_clasificacion_patologica_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_clasificacion_patologica_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_producto_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_producto_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_nombre_referencia_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_nombre_referencia_grid_line {vertical-align: top;text-align: right;}
+.css_dosis_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_dosis_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_fecha_medicamento_hasta_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_fecha_medicamento_hasta_grid_line {vertical-align: top;text-align: right;}
+.css_numero_cajas_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_numero_cajas_grid_line {vertical-align: top;text-align: right;}
+.css_asegurador_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_asegurador_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_operador_logistico_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_operador_logistico_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_punto_entrega_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_punto_entrega_grid_line {vertical-align: top;text-align: right;}
+.css_ips_atiende_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_ips_atiende_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_regimen_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_regimen_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_medico_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_medico_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_previo_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_previo_grid_line {vertical-align: top;text-align: right;}
+.css_reclamo_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_reclamo_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_fecha_reclamacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_fecha_reclamacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_causa_no_reclamacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_causa_no_reclamacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_descripcion_comunicacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_descripcion_comunicacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_fecha_programada_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_fecha_programada_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_id_ultima_gestion_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_id_ultima_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_id_tratamiento_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_id_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_id_paciente_fk_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_id_paciente_fk_grid_line {vertical-align: top;text-align: right;}
+.css_paap_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_paap_grid_line {vertical-align: top;text-align: right;}
+.css_sub_paap_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_sub_paap_grid_line {vertical-align: top;text-align: right;}
+.css_barrera_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_barrera_grid_line {vertical-align: top;text-align: right;}
+.css_fecha_ini_paap_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_fecha_ini_paap_grid_line {vertical-align: top;text-align: right;}
+.css_fecha_fin_paap_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_fecha_fin_paap_grid_line {vertical-align: top;text-align: right;}

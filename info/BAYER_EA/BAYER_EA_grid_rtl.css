@@ -1,0 +1,214 @@
+.css_evento_adverso_id_evento_adverso_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_id_evento_adverso_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_pais_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_pais_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_tipo_reporte_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_tipo_reporte_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_staff_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_staff_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_producto_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_producto_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_ciudad_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_ciudad_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_genero_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_genero_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_nacimiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_nacimiento_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_embarazo_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_embarazo_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_parto_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_parto_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_desenlace_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_desenlace_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_cuales_desenlaces_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_cuales_desenlaces_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_contacto_directo_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_contacto_directo_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_nombre_medico_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_nombre_medico_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_telefono_medico_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_telefono_medico_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fax_medico_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fax_medico_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_email_medico_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_email_medico_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_indicacion1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_indicacion1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_formulacion1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_formulacion1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_regimen_dosis1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_regimen_dosis1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_ruta_administracion1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_ruta_administracion1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_numero_lote1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_numero_lote1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_expiracion1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_expiracion1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_inicio1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_inicio1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_tratamiento_continua1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_tratamiento_continua1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_indicacion2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_indicacion2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_formulacion2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_formulacion2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_regimen_dosis2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_regimen_dosis2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_ruta_administracion2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_ruta_administracion2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_numero_lote2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_numero_lote2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_expiracion2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_expiracion2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_inicio2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_inicio2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_tratamiento_continua2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_tratamiento_continua2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_indicacion3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_indicacion3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_formulacion3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_formulacion3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_regimen_dosis3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_regimen_dosis3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_ruta_administracion3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_ruta_administracion3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_numero_lote3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_numero_lote3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_expiracion3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_expiracion3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_inicio3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_inicio3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_tratamiento_continua3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_tratamiento_continua3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_muestra_disponible_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_muestra_disponible_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_informacion_muestra_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_informacion_muestra_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_relacion_medicamento1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_relacion_medicamento1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_relacionado_dispositivo1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_relacionado_dispositivo1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_inicio_evento1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_inicio_evento1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_desenlace1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_desenlace1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_recuperacion1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_recuperacion1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_muerte1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_muerte1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_muerte1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_muerte1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_hospitalizacion1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_hospitalizacion1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_amenaza1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_amenaza1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_incapacidad1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_incapacidad1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_anormalidad1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_anormalidad1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_evento1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_evento1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_quirurgica1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_quirurgica1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_causa_muerte1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_causa_muerte1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_detalles_ea1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_detalles_ea1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_relacion_medicamento2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_relacion_medicamento2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_relacionado_dispositivo2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_relacionado_dispositivo2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_inicio_evento2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_inicio_evento2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_desenlace2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_desenlace2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_recuperacion2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_recuperacion2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_muerte2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_muerte2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_muerte2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_muerte2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_hospitalizacion2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_hospitalizacion2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_amenaza2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_amenaza2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_incapacidad2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_incapacidad2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_anormalidad2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_anormalidad2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_evento2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_evento2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_quirurgica2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_quirurgica2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_causa_muerte2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_causa_muerte2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_detalles_ea2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_detalles_ea2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_relacion_medicamento3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_relacion_medicamento3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_relacionado_dispositivo3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_relacionado_dispositivo3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_inicio_evento3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_inicio_evento3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_desenlace3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_desenlace3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_recuperacion3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_recuperacion3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_muerte3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_muerte3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_muerte3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_muerte3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_hospitalizacion3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_hospitalizacion3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_amenaza3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_amenaza3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_incapacidad3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_incapacidad3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_anormalidad3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_anormalidad3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_evento3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_evento3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_criterio_seriedad_quirurgica3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_criterio_seriedad_quirurgica3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_causa_muerte3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_causa_muerte3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_detalles_ea3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_detalles_ea3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_informacion_adicional_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_informacion_adicional_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_nombre_reporte_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_nombre_reporte_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_id_paciente_fk_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_id_paciente_fk_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_medicamento1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_medicamento1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_medicamento2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_medicamento2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_medicamento3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_medicamento3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_informacion_ea1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_informacion_ea1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_informacion_ea2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_informacion_ea2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_informacion_ea3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_informacion_ea3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_suspencion1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_suspencion1_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_suspencion2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_suspencion2_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_suspencion3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_suspencion3_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_fecha_evento_adverso_label {text-align:center;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_fecha_evento_adverso_grid_line {vertical-align: top;text-align: center;}
+.css_evento_adverso_nombre_reportante_primario_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_nombre_reportante_primario_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_telefono_reportante_primario_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_telefono_reportante_primario_grid_line {vertical-align: top;text-align: right;}
+.css_evento_adverso_tipo_reportante_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_evento_adverso_tipo_reportante_grid_line {vertical-align: top;text-align: right;}

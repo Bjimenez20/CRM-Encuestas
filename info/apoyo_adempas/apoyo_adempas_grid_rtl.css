@@ -1,0 +1,28 @@
+.css_pacientes_id_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_id_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_estado_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_estado_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_fecha_activacion_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_fecha_activacion_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_fecha_inicio_terapia_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_fecha_inicio_terapia_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_brindar_apoyo_fecha_apoyo_label {text-align:center;vertical-align:middle;font-weight:bold;}
+.css_brindar_apoyo_fecha_apoyo_grid_line {vertical-align: top;text-align: center;}
+.css_brindar_apoyo_motivo_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_brindar_apoyo_motivo_grid_line {vertical-align: top;text-align: right;}
+.css_brindar_apoyo_dosis_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_brindar_apoyo_dosis_grid_line {vertical-align: top;text-align: right;}
+.css_mes_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_mes_grid_line {vertical-align: top;text-align: right;}
+.css_brindar_apoyo_razon_apoyo_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_brindar_apoyo_razon_apoyo_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_asegurador_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_asegurador_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_operador_logistico_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_operador_logistico_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_medico_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_medico_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_ciudad_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_ciudad_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_departamento_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_departamento_paciente_grid_line {vertical-align: top;text-align: right;}

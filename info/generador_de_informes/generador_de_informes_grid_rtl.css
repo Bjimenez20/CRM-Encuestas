@@ -1,0 +1,166 @@
+.css_pacientes_id_paciente_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_pacientes_id_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_estado_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_estado_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_fecha_activacion_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_fecha_activacion_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_fecha_retiro_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_fecha_retiro_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_motivo_retiro_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_motivo_retiro_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_observacion_motivo_retiro_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_observacion_motivo_retiro_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_identificacion_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_identificacion_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_nombre_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_nombre_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_apellido_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_apellido_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_telefono_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_telefono_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_telefono2_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_telefono2_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_telefono3_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_telefono3_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_correo_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_correo_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_direccion_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_direccion_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_barrio_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_barrio_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_departamento_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_departamento_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_ciudad_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_ciudad_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_genero_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_genero_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_fecha_nacimineto_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_fecha_nacimineto_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_edad_paciente_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_pacientes_edad_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_acudiente_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_acudiente_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_telefono_acudiente_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_telefono_acudiente_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_codigo_xofigo_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_pacientes_codigo_xofigo_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_status_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_status_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_id_ultima_gestion_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_pacientes_id_ultima_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_usuario_creacion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_usuario_creacion_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_id_tratamiento_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_id_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_producto_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_producto_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_nombre_referencia_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_nombre_referencia_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_clasificacion_patologica_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_clasificacion_patologica_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_tratamiento_previo_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_tratamiento_previo_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_consentimiento_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_consentimiento_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_fecha_inicio_terapia_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_fecha_inicio_terapia_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_regimen_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_regimen_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_asegurador_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_asegurador_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_operador_logistico_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_operador_logistico_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_punto_entrega_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_punto_entrega_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_fecha_ultima_reclamacion_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_fecha_ultima_reclamacion_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_otros_operadores_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_otros_operadores_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_medios_adquisicion_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_medios_adquisicion_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_ips_atiende_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_ips_atiende_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_medico_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_medico_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_especialidad_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_especialidad_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_paramedico_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_paramedico_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_zona_atencion_paramedico_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_zona_atencion_paramedico_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_ciudad_base_paramedico_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_ciudad_base_paramedico_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_notas_adjuntos_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_notas_adjuntos_tratamiento_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_id_paciente_fk_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_id_paciente_fk_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_fecha_reclamacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_fecha_reclamacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_id_gestion_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_gestiones_id_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_motivo_comunicacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_motivo_comunicacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_medio_contacto_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_medio_contacto_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_tipo_llamada_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_tipo_llamada_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_logro_comunicacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_logro_comunicacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_motivo_no_comunicacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_motivo_no_comunicacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_numero_intentos_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_numero_intentos_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_esperado_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_esperado_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_estado_ctc_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_estado_ctc_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_estado_farmacia_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_estado_farmacia_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_reclamo_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_reclamo_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_causa_no_reclamacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_causa_no_reclamacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_dificultad_acceso_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_dificultad_acceso_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_tipo_dificultad_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_tipo_dificultad_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_envios_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_envios_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_medicamentos_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_medicamentos_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_tipo_envio_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_tipo_envio_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_evento_adverso_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_evento_adverso_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_tipo_evento_adverso_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_tipo_evento_adverso_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_genera_solicitud_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_genera_solicitud_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_fecha_proxima_llamada_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_fecha_proxima_llamada_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_motivo_proxima_llamada_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_motivo_proxima_llamada_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_observacion_proxima_llamada_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_observacion_proxima_llamada_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_consecutivo_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_consecutivo_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_autor_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_autor_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_nota_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_nota_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_descripcion_comunicacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_descripcion_comunicacion_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_fecha_programada_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_fecha_programada_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_usuario_asigando_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_usuario_asigando_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_id_paciente_fk2_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_gestiones_id_paciente_fk2_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_fecha_comunicacion_label {text-align:center;vertical-align:middle;font-weight:bold;}
+.css_gestiones_fecha_comunicacion_grid_line {vertical-align: top;text-align: center;}
+.css_gestiones_estado_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_estado_gestion_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_codigo_argus_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_codigo_argus_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_numero_cajas_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_numero_cajas_grid_line {vertical-align: top;text-align: right;}

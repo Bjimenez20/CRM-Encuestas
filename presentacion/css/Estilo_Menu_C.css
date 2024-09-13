@@ -1,0 +1,470 @@
+/* CSS Document */
+.display{
+    border:1.5px solid;
+}
+
+.row{
+    border:3px solid;
+    border-style:double;
+    margin-top:50px;
+    margin-bottom: 50px;
+    box-shadow: 0px -7px 3px #3cb1c1;
+    padding-bottom: 20px;
+}
+
+h2{
+  color: #3cb1c1;
+    font-family: sans-serif;
+    font-size: 150%;
+    font-style: italic;
+    border-bottom-style: double;  
+}
+
+p{
+   height: 70px;
+   overflow: auto
+}
+
+.tabla1{
+    height: 500px;
+    overflow: auto
+}
+
+thead{
+    color: white;
+}
+
+.Busquedaa{
+    width: 80px;
+    height: 45px;
+    border:2px solid navy;
+    border-radius: 7px;
+    background: #3cb1c1;
+    margin: 5px;
+    padding: 3px;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#SELECTOR{
+    margin-left:20px;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    
+    display: inline;
+}
+
+#input_n1{
+    position: relative;
+    top:0px;
+    
+    margin-top: 10px;
+    margin-left:20px;
+    width: 200px;
+    margin-bottom: 10px;
+    
+}
+.article_nn2{
+    
+}
+#input_n2{
+    
+    margin-top: 10px;
+    margin-left:20px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.span_y{
+    margin-left:110px;
+    margin-bottom: 10px;
+}
+
+.ppp{
+    margin-left:30px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #666666;
+}
+    
+.btn_buscar{
+    width: 80px;
+    height: 45px;
+    border: 1px solid #166C1A;
+    border-radius: 7px;
+    background: green;
+    margin: 5px;
+    padding: 3px;
+    color: white;
+    margin-top: 20px;
+}
+
+.col-sm-4{
+     width: 100%;
+}
+
+.boton_filtrar{
+    width: 100%;  
+}
+
+.classs1{
+    width: 100px;
+    display: inline-block;
+
+}
+.classs2{
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: dashed solid;
+    border-color: #666666;
+
+    height: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.spann1{  
+   width: 100px;
+   display: inline;
+}
+
+.spann2{     
+     display: block;
+     width: 200px;
+     position: relative;
+     left: 46.2%;
+     
+}
+
+.selecionnn{
+    display:inline;
+    
+}
+
+.bttp{
+    display: inline-block;
+   margin-left: 40px;
+   margin-right: 10px;
+}
+.sub_fecha{
+    font-size: 15px;
+    font-family: georgia;
+    color: rgba(0, 0, 0, .4);
+    }
+
+@media screen and (max-width:1199px){
+   .spann2{     
+     display: block;
+     width: 200px;
+     position: absolute;
+     left: 55.2%;
+     top: 18%;
+     
+} 
+.bttp{
+   display: inline-block;
+   position: absolute;
+   left: 74.2%;
+     top: 10%;
+}
+.classs2{
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: dashed solid;
+    border-color: #666666;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+}  
+@media screen and (max-width:991px){
+    .spann1{  
+   width: 100px;
+   position: absolute;
+   left: 42.2%;
+   top: 17%;
+}
+   .spann2{     
+     display: block;
+     width: 200px;
+     position: absolute;
+     left: 42.2%;
+     top: 22%;
+     
+} 
+.bttp{
+   display: inline-block;
+   position: absolute;
+   left: 74.2%;
+     top: 11%;
+}
+.classs2{
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: dashed solid;
+    border-color: #666666;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn_buscar{
+    width: 80px;
+    height: 45px;
+    border: 1px solid #166C1A;
+    border-radius: 7px;
+    background: green;
+    padding: 3px;
+    color: white;
+    margin-top: 7px;
+}
+}  
+@media screen and (max-width:767px){
+    .spann1{  
+   width: 100px;
+   position: absolute;
+   left: 43.2%;
+   top: 16%;
+}
+   .spann2{     
+     display: block;
+     width: 200px;
+     position: absolute;
+     left: 43.2%;
+     top: 21.6%;
+     
+} 
+.bttp{
+   display: inline-block;
+   position: absolute;
+   left: 23.2%;
+     top: 28%;
+}
+.classs2{
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: dashed solid;
+    border-color: #666666;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ 
+.btn_buscar{
+    width: 80px;
+    height: 45px;
+    border: 1px solid #166C1A;
+    border-radius: 7px;
+    background: green;
+    padding: 3px;
+    color: white;
+    margin-top: 7px;
+} 
+} 
+@media screen and (max-width:575px){
+    .spann1{  
+   width: 100px;
+   position: absolute;
+   left: 43.2%;
+   top: 16%;
+}
+   .spann2{     
+     display: block;
+     width: 200px;
+     position: absolute;
+     left: 43.2%;
+     top: 21.6%;
+     
+} 
+.bttp{
+   display: inline-block;
+   position: absolute;
+   left: 23.2%;
+     top: 28%;
+}
+.classs2{
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: dashed solid;
+    border-color: #666666;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ 
+.btn_buscar{
+    width: 80px;
+    height: 45px;
+    border: 1px solid #166C1A;
+    border-radius: 7px;
+    background: green;
+    padding: 3px;
+    color: white;
+    margin-top: 7px;
+} 
+.selecionnn{
+    position: absolute;
+    top:17.2%;
+    left: 0%;
+
+    
+}
+} 
+@media screen and (max-width:491px){
+    .spann1{  
+   width: 100px;
+   position: absolute;
+   left: 27%;
+   top: 20.7%;
+}
+   .spann2{     
+     display: block;
+     width: 200px;
+     position: absolute;
+     left: 27%;
+     top: 25.6%;
+     
+} 
+.bttp{
+   display: inline-block;
+   position: absolute;
+   left: 23.2%;
+     top: 33%;
+}
+.classs2{
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: dashed solid;
+    border-color: #666666;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ 
+.btn_buscar{
+    width: 80px;
+    height: 45px;
+    border: 1px solid #166C1A;
+    border-radius: 7px;
+    background: green;
+    padding: 3px;
+    color: white;
+    margin-top: 7px;
+} 
+.selecionnn{
+    position: absolute;
+    top:17.2%;
+    left: 27%;
+
+    
+}
+} 
+@media screen and (max-width:450px){
+    .spann1{  
+   width: 100px;
+   position: absolute;
+   left: 22%;
+   top: 20.7%;
+}
+   .spann2{     
+     display: block;
+     width: 200px;
+     position: absolute;
+     left: 22%;
+     top: 25.6%;
+     
+} 
+.bttp{
+   display: inline-block;
+   position: absolute;
+   left: 21.2%;
+     top: 33%;
+}
+.classs2{
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: dashed solid;
+    border-color: #666666;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ 
+.btn_buscar{
+    width: 80px;
+    height: 45px;
+    border: 1px solid #166C1A;
+    border-radius: 7px;
+    background: green;
+    padding: 3px;
+    color: white;
+    margin-top: 7px;
+} 
+.selecionnn{
+    position: absolute;
+    top:17.2%;
+    left: 22%;
+
+    
+}
+}
+@media screen and (max-width:340px){
+    .spann1{  
+   width: 100px;
+   position: absolute;
+   left: 10%;
+   top: 20.7%;
+}
+   .spann2{     
+     display: block;
+     width: 200px;
+     position: absolute;
+     left: 10%;
+     top: 25.6%;
+     
+} 
+.bttp{
+   display: inline-block;
+   position: absolute;
+   left: 10%;
+     top: 33%;
+}
+.classs2{
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: dashed solid;
+    border-color: #666666;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ 
+.btn_buscar{
+    width: 80px;
+    height: 45px;
+    border: 1px solid #166C1A;
+    border-radius: 7px;
+    background: green;
+    padding: 3px;
+    color: white;
+    margin-top: 7px;
+} 
+.selecionnn{
+    position: absolute;
+    top:17.2%;
+    left: 10%;
+
+    
+}
+}    

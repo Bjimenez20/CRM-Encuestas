@@ -1,0 +1,2 @@
+[08-Jun-2021 09:29:32 America/Chicago] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 32 bytes) in /home/apppeopl/public_html/bayer/info/_lib/prod/third/phpexcel/PHPExcel/Style/Supervisor.php on line 125
+[08-Jun-2021 09:29:47 America/Chicago] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 32 bytes) in /home/apppeopl/public_html/bayer/info/_lib/prod/third/phpexcel/PHPExcel/Style/Supervisor.php on line 125

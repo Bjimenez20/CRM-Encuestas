@@ -1,0 +1,30 @@
+.css_pacientes_id_paciente_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_pacientes_id_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_pacientes_nombre_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_nombre_paciente_grid_line {vertical-align: top;text-align: left;}
+.css_pacientes_apellido_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_apellido_paciente_grid_line {vertical-align: top;text-align: left;}
+.css_pacientes_ciudad_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_ciudad_paciente_grid_line {vertical-align: top;text-align: left;}
+.css_tratamiento_asegurador_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_asegurador_tratamiento_grid_line {vertical-align: top;text-align: left;}
+.css_tratamiento_operador_logistico_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_operador_logistico_tratamiento_grid_line {vertical-align: top;text-align: left;}
+.css_tratamiento_medico_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_medico_tratamiento_grid_line {vertical-align: top;text-align: left;}
+.css_envio_muestra_estatus_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_envio_muestra_estatus_paciente_grid_line {vertical-align: top;text-align: left;}
+.css_envio_muestra_dosis_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_envio_muestra_dosis_grid_line {vertical-align: top;text-align: left;}
+.css_envio_muestra_fecha_salida_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_envio_muestra_fecha_salida_grid_line {vertical-align: top;text-align: left;}
+.css_envio_muestra_fecha_entrega_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_envio_muestra_fecha_entrega_grid_line {vertical-align: top;text-align: left;}
+.css_envio_muestra_no_lote_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_envio_muestra_no_lote_grid_line {vertical-align: top;text-align: left;}
+.css_envio_muestra_estado_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_envio_muestra_estado_grid_line {vertical-align: top;text-align: left;}
+.css_envio_muestra_usuario_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_envio_muestra_usuario_grid_line {vertical-align: top;text-align: left;}
+.css_envio_muestra_fecha_creacion_label {text-align:center;vertical-align:middle;font-weight:bold;}
+.css_envio_muestra_fecha_creacion_grid_line {vertical-align: top;text-align: center;}

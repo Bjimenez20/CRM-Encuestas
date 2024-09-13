@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+section
+{
+	padding:10px;
+}
+input[type='text']
+{
+	width:65%;
+	height:20px;
+	font-size:100%;
+}
+.btn_buscar
+{
+	background-position:center;
+	background-image:url(../imagenes/buscar.png);
+	background-color:inherit; 
+	background-repeat:no-repeat; 
+	width:40px; 
+	height:40px; 
+	border-radius:100%; 
+	color:transparent;
+}
+.btn_exp
+{
+	background-position:center;
+	background-image:url(../imagenes/exportar.png);
+	background-color:inherit; 
+	background-repeat:no-repeat;
+	width:40px;
+	height:40px;
+	border-radius:100%;
+	color:transparent;
+}
+.btn_buscar:active
+{
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.3),
+	inset 0px 0px 20px #EEECEC;
+}
+.btn_buscar:hover
+{
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.3),
+	inset 0px 0px 20px #EEECEC;
+}
+.btn_exp:active
+{
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.3),
+	inset 0px 0px 20px #EEECEC;
+}
+.btn_exp:hover
+{
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.3),
+	inset 0px 0px 20px #EEECEC;
+}
+.ifra
+{
+	width:100%;
+	border:0px solid #000;
+}
+.letra
+{
+	font-family: Tahoma, Geneva, sans-serif;
+}

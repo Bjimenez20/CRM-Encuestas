@@ -1,0 +1,140 @@
+.css_pacientes_id_paciente_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_pacientes_id_paciente_grid_line {vertical-align: top;text-align: right;}
+.css_gestiones_logro_comunicacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_logro_comunicacion_gestion_grid_line {vertical-align: top;text-align: left;}
+.css_gestiones_fecha_comunicacion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_fecha_comunicacion_grid_line {vertical-align: top;text-align: left;}
+.css_gestiones_autor_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_autor_gestion_grid_line {vertical-align: top;text-align: left;}
+.css_pacientes_departamento_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_departamento_paciente_grid_line {vertical-align: top;text-align: left;}
+.css_pacientes_ciudad_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_ciudad_paciente_grid_line {vertical-align: top;text-align: left;}
+.css_pacientes_estado_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_estado_paciente_grid_line {vertical-align: top;text-align: left;}
+.css_pacientes_status_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_status_paciente_grid_line {vertical-align: top;text-align: left;}
+.css_pacientes_fecha_activacion_paciente_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_pacientes_fecha_activacion_paciente_grid_line {vertical-align: top;text-align: left;}
+.css_pacientes_codigo_xofigo_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_pacientes_codigo_xofigo_grid_line {vertical-align: top;text-align: right;}
+.css_tratamiento_producto_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_producto_tratamiento_grid_line {vertical-align: top;text-align: left;}
+.css_tratamiento_nombre_referencia_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_nombre_referencia_grid_line {vertical-align: top;text-align: left;}
+.css_tratamiento_dosis_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_dosis_tratamiento_grid_line {vertical-align: top;text-align: left;}
+.css_gestiones_numero_cajas_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_numero_cajas_grid_line {vertical-align: top;text-align: left;}
+.css_tratamiento_asegurador_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_asegurador_tratamiento_grid_line {vertical-align: top;text-align: left;}
+.css_tratamiento_operador_logistico_tratamiento_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_operador_logistico_tratamiento_grid_line {vertical-align: top;text-align: left;}
+.css_tratamiento_punto_entrega_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_tratamiento_punto_entrega_grid_line {vertical-align: top;text-align: left;}
+.css_gestiones_reclamo_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_reclamo_gestion_grid_line {vertical-align: top;text-align: left;}
+.css_gestiones_fecha_reclamacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_fecha_reclamacion_gestion_grid_line {vertical-align: top;text-align: left;}
+.css_gestiones_causa_no_reclamacion_gestion_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_gestiones_causa_no_reclamacion_gestion_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_id_historial_reclamacion_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_id_historial_reclamacion_grid_line {vertical-align: top;text-align: right;}
+.css_historial_reclamacion_anio_historial_reclamacion_label {text-align:right;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_anio_historial_reclamacion_grid_line {vertical-align: top;text-align: right;}
+.css_historial_reclamacion_mes1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_mes1_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_reclamo1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_reclamo1_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_fecha_reclamacion1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_fecha_reclamacion1_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_motivo_no_reclamacion1_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_motivo_no_reclamacion1_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_mes2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_mes2_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_reclamo2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_reclamo2_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_fecha_reclamacion2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_fecha_reclamacion2_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_motivo_no_reclamacion2_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_motivo_no_reclamacion2_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_mes3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_mes3_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_reclamo3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_reclamo3_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_fecha_reclamacion3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_fecha_reclamacion3_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_motivo_no_reclamacion3_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_motivo_no_reclamacion3_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_mes4_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_mes4_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_reclamo4_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_reclamo4_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_fecha_reclamacion4_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_fecha_reclamacion4_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_motivo_no_reclamacion4_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_motivo_no_reclamacion4_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_mes5_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_mes5_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_reclamo5_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_reclamo5_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_fecha_reclamacion5_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_fecha_reclamacion5_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_motivo_no_reclamacion5_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_motivo_no_reclamacion5_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_mes6_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_mes6_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_reclamo6_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_reclamo6_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_fecha_reclamacion6_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_fecha_reclamacion6_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_motivo_no_reclamacion6_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_motivo_no_reclamacion6_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_mes7_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_mes7_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_reclamo7_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_reclamo7_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_fecha_reclamacion7_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_fecha_reclamacion7_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_motivo_no_reclamacion7_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_motivo_no_reclamacion7_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_mes8_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_mes8_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_reclamo8_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_reclamo8_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_fecha_reclamacion8_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_fecha_reclamacion8_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_motivo_no_reclamacion8_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_motivo_no_reclamacion8_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_mes9_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_mes9_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_reclamo9_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_reclamo9_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_fecha_reclamacion9_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_fecha_reclamacion9_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_motivo_no_reclamacion9_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_motivo_no_reclamacion9_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_mes10_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_mes10_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_reclamo10_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_reclamo10_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_fecha_reclamacion10_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_fecha_reclamacion10_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_motivo_no_reclamacion10_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_motivo_no_reclamacion10_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_mes11_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_mes11_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_reclamo11_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_reclamo11_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_fecha_reclamacion11_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_fecha_reclamacion11_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_motivo_no_reclamacion11_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_motivo_no_reclamacion11_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_mes12_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_mes12_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_reclamo12_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_reclamo12_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_fecha_reclamacion12_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_fecha_reclamacion12_grid_line {vertical-align: top;text-align: left;}
+.css_historial_reclamacion_motivo_no_reclamacion12_label {text-align:left;vertical-align:middle;font-weight:bold;}
+.css_historial_reclamacion_motivo_no_reclamacion12_grid_line {vertical-align: top;text-align: left;}

@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+/* CSS Document */
+/*html
+{
+    background:url(../imagenes/FONDO.png) no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+:root {
+	--color-green: #035da3;
+	--color-red: #6b6c6d;
+	--color-button: #fdffff;
+	--color-black: rgb(24, 85, 42);
+}
+
+.switch-button {
+	display: inline-block;
+}
+
+.switch-button .switch-button__checkbox {
+	display: none;
+}
+
+.switch-button .switch-button__label {
+	background-color: var(--color-red);
+	width: 2rem;
+	height: 1rem;
+	border-radius: 1rem;
+	display: inline-block;
+	position: relative;
+}
+
+.switch-button .switch-button__label:before {
+	transition: .2s;
+	display: block;
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	background-color: var(--color-button);
+	content: '';
+	border-radius: 50%;
+	box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+
+.switch-button .switch-button__checkbox:checked+.switch-button__label {
+	background-color: var(--color-green);
+}
+
+.switch-button .switch-button__checkbox:checked+.switch-button__label:before {
+	transform: translateX(1rem);
+}
+
+td {
+	padding: 3px;
+	background-color: transparent;
+}
+
+.aviso3 {
+	font-size: 130%;
+	font-weight: bold;
+	color: #11a9e3;
+	text-transform: uppercase;
+	font-family: Tahoma, Geneva, sans-serif;
+	background-color: transparent;
+	text-align: center;
+	padding: 10px;
+}
+
+body {
+	width: 99.7%;
+	margin: auto auto;
+	border: 0px solid transparent;
+	/*text-transform: capitalize;
+	font-family:"AvenirNextLTPro DemiCn";*/
+}
+
+.body {
+	width: 100%;
+	margin: auto auto;
+	border: 0px solid transparent;
+}
+
+.cuerpo {
+	width: 100%;
+}
+
+.div2 {
+	width: 19%;
+	display: inline-block;
+	/*border:1px solid #000;*/
+}
+
+.div {
+	width: 30%;
+	display: inline-block;
+}
+
+input {
+	width: 95%;
+	height: 22px;
+}
+
+/*
+input[type=date] {
+	width: 95%;
+	height: 20px;
+	font-size: 100%;
+} */
+
+select {
+	width: 96%;
+	/*height: 20px;*/
+}
+
+.tit {
+	width: 16%;
+}
+
+.titulo {
+	color: #11A9E3;
+	font-weight: bold;
+	font-size: 125%;
+	padding: 8px;
+}
+
+.titulos {
+	font-weight: bold;
+}
+
+.asterisco {
+	color: #F00;
+}
+
+.btn_registrar {
+	padding-top: 2%;
+	background-image: url(../imagenes/BOTONES_REGISTRAR.png);
+	background-repeat: no-repeat;
+	width: 152px;
+	height: 37px;
+	color: transparent;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+.btn_registrar:active {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+.btn_registrar:hover {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+.btn_ver {
+	padding-top: 2%;
+	background-image: url(../imagenes/search.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 15%;
+	height: 50px;
+	color: transparent;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+.btn_gestion_paap {
+	padding-top: 2%;
+	background-image: url(../imagenes/search.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 15%;
+	height: 50px;
+	color: transparent;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+.btn_ver:active {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+.btn_ver:hover {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+span {
+	font-size: 120%;
+}
+
+.btn_restablecer {
+	padding-top: 2%;
+	background-image: url(../imagenes/BTN_RESTABLECER.png);
+	background-repeat: no-repeat;
+	width: 119px;
+	height: 25px;
+	color: transparent;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+.btn_actualizar {
+	padding-top: 2%;
+	background-image: url(../imagenes/BOTON_ACTUALIZAR.png);
+	background-repeat: no-repeat;
+	width: 152px;
+	height: 37px;
+	color: transparent;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+.btn_actualizar:active {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+.btn_actualizar:hover {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+.btn_continuar {
+	padding-top: 2%;
+	background-image: url(../imagenes/BTN_CONTINUAR2.png);
+	background-repeat: no-repeat;
+	width: 152px;
+	height: 37px;
+	color: transparent;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+.btn_continuar:active {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+.btn_continuar:hover {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+.btn_agregar {
+	padding-top: 2%;
+	background-image: url(../imagenes/BOTON_AGREGAR.png);
+	background-repeat: no-repeat;
+	width: 152px;
+	height: 37px;
+	color: transparent;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+.btn_agregar:active {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+.btn_agregar:hover {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+.btn_upload {
+	padding-top: 2%;
+	background-image: url(../imagenes/BOTON_UPLOAD.png);
+	background-repeat: no-repeat;
+	width: 152px;
+	height: 37px;
+	color: transparent;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+.btn_upload:active {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+.btn_upload:hover {
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+		inset 0px 0px 20px #EEECEC;
+}
+
+.btn_exp {
+	background-position: center;
+	background-image: url(../imagenes/exportar.png);
+	background-color: inherit;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	color: transparent;
+}
+
+.letra {
+	font-family: Tahoma, Geneva, sans-serif;
+}
