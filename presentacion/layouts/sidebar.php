@@ -78,7 +78,7 @@ if ($privilegios == 1) {
                 <div class="collapse" id="pagesExamples3">
                     <ul class="nav">
                         <li class="nav-item select_menu">
-                            <a class="nav-link" href="../presentacion/form_bi.php" target="info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a class="nav-link" href="../presentacion/reporte_bi.php" target="info" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <i class="material-icons">leaderboard </i>
                                 <span class="sidebar-normal"> BI </span>
                             </a>
