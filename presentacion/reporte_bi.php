@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <iframe title="Novo Encuestas" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=72b28378-248e-4056-a764-46b88d645673&autoAuth=true&ctid=e901264a-09ed-4e23-b1be-f5ce244c0167" frameborder="0" allowFullScreen="true"></iframe>
+    <iframe title="Novo Encuestas" width="1140" height="541.25" src="https://app.powerbi.com/view?r=eyJrIjoiMzUxNGRmYTctOGJkMy00MGRiLTgxMGQtZTUzZTcwZjNlODJkIiwidCI6ImI3ZDllM2Y2LTQ1ODktNDRiNi05ZDAyLTAwNTAyNjk2ZTllMiIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
 </body>
 
 </html>
