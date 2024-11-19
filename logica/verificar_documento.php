@@ -9,7 +9,7 @@ $data = json_decode(file_get_contents('php://input'), true);
 $documento = $data['documento'];
 
 // Consultar en la base de datos
-$sql = "SELECT nombre, apellido, tipo_documento, numero_documento, telefono, direccion FROM personas WHERE numero_documento = ?";
+$sql = "SELECT id, nombre, apellido, tipo_documento, numero_documento, telefono, direccion FROM personas WHERE numero_documento = ?";
 $stmt = $conex->prepare($sql);
 
 if (!$stmt) {

@@ -5,29 +5,52 @@ require('../logica/session.php');
 require('../datos/conex.php');
 
 // Obtener los datos del formulario
-$nombre = $_POST['nombre'] ?? '';
-$apellidos = $_POST['apellidos'] ?? '';
-$tipo_documento = $_POST['tipo_documento'] ?? '';
-$numero_documento = $_POST['numero_documento'] ?? '';
-$telefono = $_POST['telefono'] ?? '';
-$direccion = $_POST['direccion'] ?? '';
-$satisfaccion = $_POST['satisfaccion'] ?? '';
-$recomendarias = $_POST['recomendarias'] ?? '';
-$mejora = $_POST['mejora'] ?? '';
-$contacto = isset($_POST['contacto']) ? 1 : 0;
-$origen = isset($_POST['origen']) ? implode(',', $_POST['origen']) : '';
+$respuesta_1 = $_POST['respuesta_1'] ?? '';
+$respuesta_2 = $_POST['respuesta_2'] ?? '';
+$respuesta_3 = $_POST['respuesta_3'] ?? '';
+$respuesta_4 = $_POST['respuesta_4'] ?? '';
+$respuesta_5 = $_POST['respuesta_5'] ?? '';
+$persona = $_POST['persona'] ?? '';
+$cuestionarioSeleccionado = $_POST['cuestionarioSeleccionado'] ?? '';
 
 // Preparar la consulta para insertar los datos
-$sql = "INSERT INTO encuestas (nombre_encuestado, tipo_documento_encuestado, numero_documento_encuestado, telefono_encuestado, direccion_encuestado, satisfaccion, recomendarias, mejora, contacto, origen) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-$stmt = $conex->prepare($sql);
+switch ($cuestionarioSeleccionado) {
+    case '1':
+        $sql = "INSERT INTO respuestas (repuesta_1, repuesta_2, repuesta_3, id_persona_fk, id_cuestionarios_fk) VALUES (?, ?, ?, ?, ?)";
+        $stmt = $conex->prepare($sql);
 
-if (!$stmt) {
-    echo json_encode(['error' => 'Error al preparar la consulta: ' . $conex->error]);
-    exit;
+        if (!$stmt) {
+            echo json_encode(['error' => 'Error al preparar la consulta: ' . $conex->error]);
+            exit;
+        }
+
+        // Bind de los parámetros: 's' para strings, 'i' para enteros.
+        $stmt->bind_param("sssss", $respuesta_1, $respuesta_2, $respuesta_3, $persona, $cuestionarioSeleccionado);
+        break;
+    case '2':
+        $sql = "INSERT INTO respuestas (repuesta_1, repuesta_2, repuesta_3, id_persona_fk, id_cuestionarios_fk) VALUES (?, ?, ?, ?, ?)";
+        $stmt = $conex->prepare($sql);
+
+        if (!$stmt) {
+            echo json_encode(['error' => 'Error al preparar la consulta: ' . $conex->error]);
+            exit;
+        }
+
+        // Bind de los parámetros: 's' para strings, 'i' para enteros.
+        $stmt->bind_param("sssss", $respuesta_1, $respuesta_4, $respuesta_5, $persona, $cuestionarioSeleccionado);
+        break;
+    case '3';
+        $sql = "INSERT INTO respuestas (repuesta_1, repuesta_2, repuesta_3, repuesta_4, repuesta_5, id_persona_fk, id_cuestionarios_fk) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $stmt = $conex->prepare($sql);
+
+        if (!$stmt) {
+            echo json_encode(['error' => 'Error al preparar la consulta: ' . $conex->error]);
+            exit;
+        }
+
+        // Bind de los parámetros: 's' para strings, 'i' para enteros.
+        $stmt->bind_param("sssssss", $respuesta_1, $respuesta_2, $respuesta_3, $respuesta_4, $respuesta_5, $persona, $cuestionarioSeleccionado);
 }
-
-// Bind de los parámetros: 's' para strings, 'i' para enteros.
-$stmt->bind_param("ssssssssss", $nombre, $tipo_documento, $numero_documento, $telefono, $direccion, $satisfaccion, $recomendarias, $mejora, $contacto, $origen);
 
 $response = [];
 if ($stmt->execute()) {
