@@ -16,20 +16,17 @@
     <div class="container mt-5">
         <h1 class="text-center">Listado de Encuestas</h1>
 
-        <table id="tablaEncuestas" class="display table table-striped" style="width:100%">
+        <table id="tablaEncuestas" class="table table-striped" style="width:100%">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Nombre Encuestado </th>
-                    <th>Tipo de Documento Encuestado </th>
-                    <th>Numero de Documento Encuestado </th>
-                    <th>Telefono Encuestado </th>
-                    <th>Dirección Encuestado </th>
-                    <th>Pregunta 1 </th>
-                    <th>Pregunta 2 </th>
-                    <th>Pregunta 3 </th>
-                    <th>Pregunta 4 </th>
-                    <th>Pregunta 5</th>
+                    <th>Encuesta </th>
+                    <th>Respuesta 1 </th>
+                    <th>Respuesta 2 </th>
+                    <th>Respuesta 3 </th>
+                    <th>Respuesta 4 </th>
+                    <th>Respuesta 5 </th>
                 </tr>
             </thead>
         </table>
@@ -42,6 +39,12 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
+    <style>
+        .highlight-red {
+            background-color: red;
+        }
+    </style>
+
     <script>
         $(document).ready(function() {
             $('#tablaEncuestas').DataTable({
@@ -51,45 +54,45 @@
                     "dataSrc": "data" // Ruta en el JSON donde están los datos
                 },
                 "columns": [{
-                        "data": "id"
+                        "data": "id_res"
                     },
                     {
-                        "data": "nombre_encuestado"
+                        "data": "nombre"
                     },
                     {
-                        "data": "tipo_documento_encuestado"
+                        "data": "nombre_encuesta"
                     },
                     {
-                        "data": "numero_documento_encuestado"
+                        "data": "repuesta_1"
                     },
                     {
-                        "data": "telefono_encuestado"
+                        "data": "repuesta_2"
                     },
                     {
-                        "data": "direccion_encuestado"
+                        "data": "repuesta_3"
                     },
                     {
-                        "data": "satisfaccion"
+                        "data": "repuesta_4"
                     },
                     {
-                        "data": "recomendarias"
-                    },
-                    {
-                        "data": "mejora"
-                    },
-                    {
-                        "data": "contacto"
-                    },
-                    {
-                        "data": "origen"
+                        "data": "repuesta_5"
                     }
                 ],
                 "language": {
                     "url": "//cdn.datatables.net/plug-ins/1.11.5/i18n/Spanish.json"
+                },
+                "createdRow": function(row, data, dataIndex) {
+                    // Verificar si el nombre_encuesta es igual a "Cuestionario 1"
+                    if (data.nombre_encuesta != "Cuestionario 3") {
+                        // Cambiar las respuestas a "X"
+                        $('td', row).eq(6).text('X').addClass('highlight-red');; // Columna repuesta_4
+                        $('td', row).eq(7).text('X'); // Columna repuesta_5
+                    }
                 }
             });
         });
     </script>
+
 
 </body>
 

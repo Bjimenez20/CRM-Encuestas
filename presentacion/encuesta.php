@@ -190,7 +190,7 @@ require '../datos/conex.php';
                     </div>
                 </div>
             </div>
-            <div id="3">
+            <div id="3" style="display: none;">
                 <!-- Pregunta 2 -->
                 <div class="mb-3">
                     <label class="form-label">2. De estos pacientes con Diabetes Mellitus Tipo 2, ¿a cuántos les formuló un GLP-1 inyectable u oral?</label><br>
