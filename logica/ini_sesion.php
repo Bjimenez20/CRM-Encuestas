@@ -42,8 +42,6 @@ if (mysqli_num_rows($sql) > 0) {
 	} else {
 		if ($estado_app == '1') {
 			require("../presentacion/form_restablecer_clave.php");
-		} elseif ($estado_app == '2') {
-			require("../presentacion/form_politica.php");
 		} else {
 			require("../presentacion/inicio1.php");
 		}
