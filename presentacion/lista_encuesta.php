@@ -57,7 +57,11 @@
                         "data": "id_res"
                     },
                     {
-                        "data": "nombre"
+                        "data": null, // Se usa null porque el contenido se genera dinámicamente
+                        "render": function(data, type, row) {
+                            // Concatenar nombre y nombre_encuesta
+                            return `${row.nombre} ${row.apellido}`;
+                        }
                     },
                     {
                         "data": "nombre_encuesta"

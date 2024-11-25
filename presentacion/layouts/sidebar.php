@@ -1,6 +1,10 @@
 <?php include('../../logica/session.php');
 if ($privilegios == 1) {
     $PERFIL = 'ADMINISTRADOR';
+} else if ($privilegios == 2) {
+    $PERFIL = 'SUPERVISOR';
+} else {
+    $PERFIL = 'ASESOR';
 }
 ?>
 
@@ -68,54 +72,66 @@ if ($privilegios == 1) {
                     <p> Respuestas </p>
                 </a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link" data-toggle="collapse" href="#pagesExamples3">
-                    <i class="material-icons">pie_chart</i>
-                    <p> Reportes
-                        <b class="caret"></b>
-                    </p>
-                </a>
-                <div class="collapse" id="pagesExamples3">
-                    <ul class="nav">
-                        <li class="nav-item select_menu">
-                            <a class="nav-link" href="../presentacion/reporte_bi.php" target="info" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="material-icons">leaderboard </i>
-                                <span class="sidebar-normal"> BI </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" data-toggle="collapse" href="#pagesExamples4">
-                    <i class="material-icons">settings</i>
-                    <p> Configuracion
-                        <b class="caret"></b>
-                    </p>
-                </a>
-                <div class="collapse" id="pagesExamples4">
-                    <ul class="nav">
-                        <li class="nav-item select_menu">
-                            <a class="nav-link" href="../presentacion/form_registrar.php" target="info">
-                                <i class="material-icons">group_add</i>
-                                <span class="sidebar-normal"> Registrar usuarios </span>
-                            </a>
-                        </li>
-                        <li class="nav-item select_menu">
-                            <a class="nav-link" href="../presentacion/form_usuarios.php" target="info">
-                                <i class="material-icons">group_add</i>
-                                <span class="sidebar-normal"> Usuarios </span>
-                            </a>
-                        </li>
-                        <li class="nav-item select_menu">
-                            <a class="nav-link" href="../presentacion/form_cuenta_usuario.php" target="info">
-                                <i class="material-icons">person</i>
-                                <span class="sidebar-normal"> Mi cuenta </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
+            <?php
+            if ($privilegios == 2 or $privilegios == 1) {
+            ?>
+                <li class="nav-item ">
+                    <a class="nav-link" data-toggle="collapse" href="#pagesExamples3">
+                        <i class="material-icons">pie_chart</i>
+                        <p> Reportes
+                            <b class="caret"></b>
+                        </p>
+                    </a>
+                    <div class="collapse" id="pagesExamples3">
+                        <ul class="nav">
+                            <li class="nav-item select_menu">
+                                <a class="nav-link" href="../presentacion/reporte_bi.php" target="info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <i class="material-icons">leaderboard </i>
+                                    <span class="sidebar-normal"> BI </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            <?php
+            }
+            ?>
+            <?php
+            if ($privilegios == 1) {
+            ?>
+                <li class="nav-item ">
+                    <a class="nav-link" data-toggle="collapse" href="#pagesExamples4">
+                        <i class="material-icons">settings</i>
+                        <p> Configuracion
+                            <b class="caret"></b>
+                        </p>
+                    </a>
+                    <div class="collapse" id="pagesExamples4">
+                        <ul class="nav">
+                            <li class="nav-item select_menu">
+                                <a class="nav-link" href="../presentacion/form_registrar.php" target="info">
+                                    <i class="material-icons">group_add</i>
+                                    <span class="sidebar-normal"> Registrar usuarios </span>
+                                </a>
+                            </li>
+                            <li class="nav-item select_menu">
+                                <a class="nav-link" href="../presentacion/form_usuarios.php" target="info">
+                                    <i class="material-icons">group_add</i>
+                                    <span class="sidebar-normal"> Usuarios </span>
+                                </a>
+                            </li>
+                            <li class="nav-item select_menu">
+                                <a class="nav-link" href="../presentacion/form_cuenta_usuario.php" target="info">
+                                    <i class="material-icons">person</i>
+                                    <span class="sidebar-normal"> Mi cuenta </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            <?php
+            }
+            ?>
             <li class="nav-item ">
                 <a class="nav-link logout" href="../logica/cerrar_sesion.php">
                     <i class="material-icons">logout</i>

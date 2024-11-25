@@ -73,20 +73,26 @@ if ($privilegios != '' && $usua != '') {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card text-center cardhome">
-                                    <div class="overflow-hidden position-relative border-radius-lg bg-cover p-3" style="background-image: url('./../presentacion/imagenes/cardhome3.png')">
-                                        <span class="mask bg-gradient-dark opacity-6"></span>
-                                        <div class="card-body position-relative z-index-1 d-flex flex-column mt-5">
-                                            <p class="text-white font-weight-bold h3">REPORTES</p>
-                                            <a class="select_menu text-white text-sm font-weight-bold mb-0 icon-move-right mt-4" href="../presentacion/scriptcase.php" target="info">
-                                                Ver más
-                                                <i class="material-icons text-sm ms-1 position-relative" aria-hidden="true">arrow_forward</i>
-                                            </a>
+                            <?php
+                            if ($privilegios == 1 or $privilegios == 2) {
+                            ?>
+                                <div class="col-md-4">
+                                    <div class="card text-center cardhome">
+                                        <div class="overflow-hidden position-relative border-radius-lg bg-cover p-3" style="background-image: url('./../presentacion/imagenes/cardhome3.png')">
+                                            <span class="mask bg-gradient-dark opacity-6"></span>
+                                            <div class="card-body position-relative z-index-1 d-flex flex-column mt-5">
+                                                <p class="text-white font-weight-bold h3">REPORTES</p>
+                                                <a class="select_menu text-white text-sm font-weight-bold mb-0 icon-move-right mt-4" href="../presentacion/scriptcase.php" target="info">
+                                                    Ver más
+                                                    <i class="material-icons text-sm ms-1 position-relative" aria-hidden="true">arrow_forward</i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            <?php
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
