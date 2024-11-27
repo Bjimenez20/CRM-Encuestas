@@ -42,49 +42,55 @@ require '../datos/conex.php';
             <button id="btnHabilitarEncuesta" class="btn btn-success mt-3" disabled>Habilitar Encuesta</button>
         </div>
 
-        <!-- Formulario de encuesta -->
-        <form id="formEncuesta" style="display: none;">
+        <!-- Formulario de registro -->
+        <form id="formRegistro" style="display: none;">
             <div class="row mb-3">
                 <div class="col">
                     <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" readonly>
+                    <input type="text" class="form-control" name="nombre" id="nombre">
                 </div>
                 <div class="col">
                     <label for="apellidos" class="form-label">Apellidos</label>
-                    <input type="text" class="form-control" name="apellidos" id="apellidos" readonly>
+                    <input type="text" class="form-control" name="apellidos" id="apellidos">
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col">
                     <label for="tipo_documento" class="form-label">Tipo de Documento</label>
-                    <input type="text" class="form-control" name="tipo_documento" id="tipo_documento" readonly>
+                    <input type="text" class="form-control" name="tipo_documento" id="tipo_documento">
                 </div>
                 <div class="col">
                     <label for="numero_documento" class="form-label">Número de Documento</label>
-                    <input type="text" class="form-control" name="numero_documento" id="numero_documento" readonly>
+                    <input type="text" class="form-control" name="numero_documento" id="numero_documento">
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col">
                     <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="text" class="form-control" name="telefono" id="telefono" readonly>
+                    <input type="text" class="form-control" name="telefono" id="telefono">
                 </div>
                 <div class="col">
                     <label for="direccion" class="form-label">Dirección</label>
-                    <input type="text" class="form-control" name="direccion" id="direccion" readonly>
+                    <input type="text" class="form-control" name="direccion" id="direccion">
                 </div>
             </div>
+            <div id="btnRegistrar" style="display: none;">
+                <button type="submit" class="btn btn-success">Registrar</button>
+            </div>
+        </form>
+        <!-- Formulario de encuesta -->
+        <form id="formEncuesta" style="display: none;">
+            <hr>
             <div class="row mb-3" style="display: none;">
                 <div class="col">
                     <label for="persona" class="form-label">Persona</label>
-                    <input type="text" class="form-control" name="persona" id="persona" readonly>
+                    <input type="text" class="form-control" name="persona" id="persona">
                 </div>
                 <div class="col">
                     <label for="cuestionarioSeleccionado" class="form-label">Cuestionario</label>
-                    <input type="text" class="form-control" name="cuestionarioSeleccionado" id="cuestionarioSeleccionado" readonly>
+                    <input type="text" class="form-control" name="cuestionarioSeleccionado" id="cuestionarioSeleccionado">
                 </div>
             </div>
-            <hr>
             <div class="mb-3">
                 <label class="form-label">1. De los pacientes que atiende en una semana, ¿Cuántos de ellos tienen Diabetes Mellitus Tipo 2?</label><br>
                 <div class="form-check">
@@ -286,12 +292,31 @@ require '../datos/conex.php';
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script>
+        // Elementos del DOM
         const formConsulta = document.getElementById('formConsulta');
+        const formRegistro = document.getElementById('formRegistro');
+        const btnRegistrar = document.getElementById('btnRegistrar');
         const seleccionCuestionario = document.getElementById('seleccionCuestionario');
+        const formEncuesta = document.getElementById('formEncuesta');
         const btnHabilitarEncuesta = document.getElementById('btnHabilitarEncuesta');
         const cuestionarioSelect = document.getElementById('cuestionario');
         const btnConsultar = document.getElementById('btnConsultar');
 
+        // Función para mostrar u ocultar secciones
+        function toggleSection(section, show) {
+            section.style.display = show ? 'block' : 'none';
+        }
+
+        // Función para mostrar alertas
+        function showAlert(type, title, text) {
+            Swal.fire({
+                icon: type,
+                title: title,
+                text: text,
+            });
+        }
+
+        // Manejo del formulario de consulta
         formConsulta.addEventListener('submit', function(e) {
             e.preventDefault();
             const documento = document.getElementById('documento').value;
@@ -301,13 +326,14 @@ require '../datos/conex.php';
                 })
                 .then(response => {
                     if (response.data.encontrado) {
-                        // Mostrar datos del documento
-                        document.getElementById('nombre').value = response.data.datos.nombre || '';
-                        document.getElementById('apellidos').value = response.data.datos.apellido || '';
-                        document.getElementById('tipo_documento').value = response.data.datos.tipo_documento || '';
-                        document.getElementById('numero_documento').value = response.data.datos.numero_documento || '';
-                        document.getElementById('telefono').value = response.data.datos.telefono || '';
-                        document.getElementById('direccion').value = response.data.datos.direccion || '';
+                        // Documento encontrado
+                        const datos = response.data.datos;
+                        document.getElementById('nombre').value = datos.nombre || '';
+                        document.getElementById('apellidos').value = datos.apellido || '';
+                        document.getElementById('tipo_documento').value = datos.tipo_documento || '';
+                        document.getElementById('numero_documento').value = datos.numero_documento || '';
+                        document.getElementById('telefono').value = datos.telefono || '';
+                        document.getElementById('direccion').value = datos.direccion || '';
                         document.getElementById('cuestionario').addEventListener('change', function() {
                             // Obtén el valor del cuestionario seleccionado
                             const cuestionarioId = this.value; // ID del cuestionario
@@ -315,31 +341,98 @@ require '../datos/conex.php';
 
                             // Muestra el texto del cuestionario seleccionado en el input
                             document.getElementById('cuestionarioSeleccionado').value = cuestionarioId;
+
                         });
-                        document.getElementById('persona').value = response.data.datos.id || '';
-                        seleccionCuestionario.style.display = 'block';
-                        formConsulta.style.display = 'none';
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Documento encontrado',
-                            text: 'Selecciona un cuestionario para continuar.'
-                        });
+                        document.getElementById('persona').value = datos.id || '';
+
+                        toggleSection(formConsulta, false);
+                        toggleSection(seleccionCuestionario, true);
+
+                        const nombreInput = document.getElementById('nombre');
+                        const apellidosInput = document.getElementById('apellidos');
+                        const tipoDocumentoInput = document.getElementById('tipo_documento');
+                        const numeroDocumentoInput = document.getElementById('numero_documento');
+                        const telefonoInput = document.getElementById('telefono');
+                        const direccionInput = document.getElementById('direccion');
+
+                        // Asignar valores y marcar como readonly si no están vacíos
+                        if (datos.nombre) {
+                            nombreInput.value = datos.nombre;
+                            nombreInput.readOnly = true; // Hacerlo readonly si tiene valor
+                        } else {
+                            nombreInput.value = '';
+                        }
+
+                        if (datos.apellido) {
+                            apellidosInput.value = datos.apellido;
+                            apellidosInput.readOnly = true;
+                        } else {
+                            apellidosInput.value = '';
+                        }
+
+                        if (datos.tipo_documento) {
+                            tipoDocumentoInput.value = datos.tipo_documento;
+                            tipoDocumentoInput.readOnly = true;
+                        } else {
+                            tipoDocumentoInput.value = '';
+                        }
+
+                        if (datos.numero_documento) {
+                            numeroDocumentoInput.value = datos.numero_documento;
+                            numeroDocumentoInput.readOnly = true;
+                        } else {
+                            numeroDocumentoInput.value = '';
+                        }
+
+                        if (datos.telefono) {
+                            telefonoInput.value = datos.telefono;
+                            telefonoInput.readOnly = true;
+                        } else {
+                            telefonoInput.value = '';
+                        }
+
+                        if (datos.direccion) {
+                            direccionInput.value = datos.direccion;
+                            direccionInput.readOnly = true;
+                        } else {
+                            direccionInput.value = '';
+                        }
+
+                        showAlert('success', 'Documento encontrado', 'Selecciona un cuestionario para continuar.');
                     } else {
-                        seleccionCuestionario.style.display = 'block';
-                        formConsulta.style.display = 'none';
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Documento no encontrado',
-                            text: 'El número de documento no está registrado.'
-                        });
+                        // Documento no encontrado
+                        toggleSection(formConsulta, false);
+                        toggleSection(formRegistro, true);
+                        toggleSection(btnRegistrar, true);
+
+                        showAlert('error', 'Documento no encontrado', 'El número de documento no está registrado.');
                     }
                 })
-                .catch(error => {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Error',
-                        text: 'Ocurrió un problema al verificar el documento.'
-                    });
+                .catch(() => {
+                    showAlert('error', 'Error', 'Ocurrió un problema al verificar el documento.');
+                });
+        });
+
+        // Manejo del formulario de registro
+        formRegistro.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(formRegistro);
+
+            axios.post('../logica/registro_persona.php', formData)
+                .then(response => {
+                    if (response.data.status === 'registrado') {
+                        // Mostrar la alerta de éxito
+                        showAlert('success', 'Registro exitoso', 'Volver a consultarse.')
+                        setTimeout(() => {
+                            window.open('../presentacion/encuesta.php', 'info');
+                        }, 2000);
+                    } else {
+                        // Mostrar mensaje de error si no se pudo registrar
+                        showAlert('error', 'Error en el registro', response.data.error || 'No se pudo registrar.');
+                    }
+                })
+                .catch(() => {
+                    showAlert('error', 'Error', 'Ocurrió un problema al registrar.');
                 });
         });
 
@@ -352,48 +445,34 @@ require '../datos/conex.php';
             document.getElementById(selectedCuestionario).style.display = 'block';
             formEncuesta.style.display = 'block';
             seleccionCuestionario.style.display = 'none';
+            formRegistro.style.display = 'block';
+            // btnRegistrar.style.display = 'none'
+            formEncuesta.style.display = 'block';
         });
 
-        // Aquí añades el script para el manejo de la encuesta
-        const formEncuesta = document.getElementById('formEncuesta');
+        // Manejo del formulario de encuesta
         formEncuesta.addEventListener('submit', function(e) {
             e.preventDefault();
-
-            // Obtener los datos del formulario de encuesta
             const formData = new FormData(formEncuesta);
 
-            // Enviar los datos al servidor usando Axios
             axios.post('../logica/procesar_encuesta.php', formData)
                 .then(response => {
+                    console.log(response)
                     if (response.data.success) {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Encuesta registrada',
-                            text: response.data.success,
-                        }).then(() => {
-                            // Redirigir o resetear el formulario si es necesario
-                            const url = `../presentacion/encuesta.php`;
-                            const target = "info";
-                            //document.getElementById("seguimiento").reset()
-                            window.open(url, target);
-                        });
-                    } else if (response.data.error) {
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Error',
-                            text: response.data.error,
-                        });
+                        showAlert('success', 'Encuesta registrada')
+                        setTimeout(() => {
+                            window.open('../presentacion/encuesta.php', 'info');
+                        }, 2000);
+                    } else {
+                        showAlert('error', 'Error', response.data.error || 'No se pudo registrar la encuesta.');
                     }
                 })
-                .catch(error => {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Error',
-                        text: 'Ocurrió un problema al guardar la encuesta.',
-                    });
+                .catch(() => {
+                    showAlert('error', 'Error', 'Ocurrió un problema al guardar la encuesta.');
                 });
         });
     </script>
+
 
 </body>
 
