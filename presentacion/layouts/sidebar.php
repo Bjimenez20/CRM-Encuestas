@@ -61,7 +61,7 @@ if ($privilegios == 1) {
                 }
             </script>
             <li class="nav-item select_menu">
-                <a class="nav-link" href="../presentacion/encuesta.php" target="info">
+                <a class="nav-link" href="../presentacion/form_buscar.php" target="info">
                     <i class="material-icons">assignment</i>
                     <p> Encuesta </p>
                 </a>

@@ -1,36 +1,53 @@
 <?php
+ob_start();
+require '../datos/conex.php';
 header('Content-Type: application/json');
+ob_clean();
 
-require('../logica/session.php');
-require('../datos/conex.php');
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $data = json_decode(file_get_contents('php://input'), true);
+    $documento = $data['documento'] ?? '';
 
+    if (!empty($documento)) {
+        // Preparar la consulta
+        $stmt = $conex->prepare("SELECT * FROM personas WHERE telefono1 = ? OR telefono2 = ? OR telefono3 = ? OR telefono4 = ?");
+        if ($stmt) {
+            // Vincular el parámetro
+            $stmt->bind_param('ssss', $documento, $documento, $documento, $documento); // 's' indica tipo string
+            $stmt->execute(); // Ejecutar la consulta
+            $result = $stmt->get_result(); // Obtener el resultado
 
-$data = json_decode(file_get_contents('php://input'), true);
-$documento = $data['documento'];
-
-// Consultar en la base de datos
-$sql = "SELECT id, nombre, apellido, tipo_documento, numero_documento, telefono, direccion FROM personas WHERE numero_documento = ?";
-$stmt = $conex->prepare($sql);
-
-if (!$stmt) {
-    echo json_encode(['error' => 'Error al preparar la consulta: ' . $conex->error]);
-    exit;
-}
-
-$stmt->bind_param("s", $documento);
-$stmt->execute();
-$result = $stmt->get_result();
-
-// Verificar si se encontró el documento
-if ($result->num_rows > 0) {
-    // Documento encontrado
-    $data = $result->fetch_assoc();
-    echo json_encode(['encontrado' => true, 'datos' => $data]);
+            if ($result->num_rows > 0) {
+                $persona = $result->fetch_assoc(); // Obtener los datos
+                echo json_encode([
+                    'encontrado' => true,
+                    'mensaje' => 'Telefono encontrado.',
+                    'tipo' => 'success',
+                    'persona' => $persona, // Puedes incluir los datos encontrados
+                ]);
+            } else {
+                echo json_encode([
+                    'encontrado' => false,
+                    'mensaje' => 'Telefono no encontrado.',
+                    'tipo' => 'error',
+                ]);
+            }
+            $stmt->close(); // Cerrar el statement
+        } else {
+            echo json_encode([
+                'encontrado' => false,
+                'mensaje' => 'Error al preparar la consulta.',
+                'tipo' => 'error',
+            ]);
+        }
+    } else {
+        echo json_encode([
+            'encontrado' => false,
+            'mensaje' => 'Telefono no válido.',
+            'tipo' => 'error',
+        ]);
+    }
 } else {
-    // Documento no encontrado
-    echo json_encode(['encontrado' => false]);
+    http_response_code(405);
+    echo json_encode(['mensaje' => 'Método no permitido.']);
 }
-
-// Cerrar conexión
-$stmt->close();
-$conex->close();
