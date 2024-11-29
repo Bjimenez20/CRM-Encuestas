@@ -67,11 +67,11 @@ require '../datos/conex.php';
             <form>
                 <div class="row-reverse">
                     <div class="col-6 mb-3">
-                        <label for="documento" class="form-label">Número de Documento</label>
+                        <label for="documento" class="form-label">Número de Teléfono</label>
                         <input type="text" class="form-control" name="documento" id="documento" required>
                     </div>
                     <div class="col">
-                        <button type="submit" id="btnConsultar" class="btn btn-primary">Consultar Documento</button>
+                        <button type="submit" id="btnConsultar" class="btn btn-primary">Consultar Teléfono</button>
                     </div>
                 </div>
             </form>
