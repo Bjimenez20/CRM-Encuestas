@@ -184,20 +184,20 @@ require '../logica/get_persona.php';
                                 <div class="mb-3">
                                     <label class="form-label">1. De los pacientes que atiende en una semana, ¿Cuántos de ellos tienen Diabetes Mellitus Tipo 2?</label><br>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" id="De1a20" name="respuesta_1" value="De 1 a 20">
-                                        <label class="form-check-label" for="De1a20">De 1 a 20</label>
+                                        <input class="form-check-input" type="radio" id="De1a20" name="respuesta_1" value="a) De 1 a 20">
+                                        <label class="form-check-label" for="De1a20">a) De 1 a 20</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" id="De21a20" name="respuesta_1" value="De 21 a 40">
-                                        <label class="form-check-label" for="De21a20">De 21 a 40</label>
+                                        <input class="form-check-input" type="radio" id="De21a20" name="respuesta_1" value="b) De 21 a 40">
+                                        <label class="form-check-label" for="De21a20">b) De 21 a 40</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" id="De41a60" name="respuesta_1" value="De 41 a 60">
-                                        <label class="form-check-label" for="De41a60">De 41 a 60</label>
+                                        <input class="form-check-input" type="radio" id="De41a60" name="respuesta_1" value="c) De 41 a 60">
+                                        <label class="form-check-label" for="De41a60">c) De 41 a 60</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" id="Masde60" name="respuesta_1" value="Mas de 60">
-                                        <label class="form-check-label" for="Masde60">Más de 60</label>
+                                        <input class="form-check-input" type="radio" id="Masde60" name="respuesta_1" value="d) Mas de 60">
+                                        <label class="form-check-label" for="Masde60">d) Más de 60</label>
                                     </div>
                                 </div>
                                 <div id="1" style="display: none;">
@@ -205,20 +205,20 @@ require '../logica/get_persona.php';
                                     <div class="mb-3">
                                         <label class="form-label">2. De estos pacientes con Diabetes Mellitus Tipo 2, ¿a cuántos les formuló un GLP-1 inyectable u oral?</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_2" value="Ninguno">
-                                            <label class="form-check-label" for="Ninguno">Ninguno</label>
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_2" value="a) Ninguno">
+                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_2" value="De 1 a 2">
-                                            <label class="form-check-label" for="De1a2">De 1 a 2</label>
+                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_2" value="b) De 1 a 2">
+                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_2" value="De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_2" value="c) De 3 a 5">
+                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_2" value="Mas de 6">
-                                            <label class="form-check-label" for="Masde6">Más de 6</label>
+                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_2" value="d) Mas de 6">
+                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
                                         </div>
                                     </div>
 
@@ -226,20 +226,20 @@ require '../logica/get_persona.php';
                                     <div class="mb-3">
                                         <label class="form-label">3. De estos pacientes con GLP-1, ¿a cuántos les formuló un GLP1 oral?</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_3" value="Ninguno">
-                                            <label class="form-check-label" for="Ninguno">Ninguno</label>
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_3" value="a) Ninguno">
+                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_3" value="De 1 a 2">
-                                            <label class="form-check-label" for="De1a2">De 1 a 2</label>
+                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_3" value="b) De 1 a 2">
+                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_3" value="De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_3" value="c) De 3 a 5">
+                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_3" value="Mas de 6">
-                                            <label class="form-check-label" for="Masde6">Más de 6</label>
+                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_3" value="d) Mas de 6">
+                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
                                         </div>
                                     </div>
                                 </div>
@@ -248,20 +248,20 @@ require '../logica/get_persona.php';
                                     <div class="mb-3">
                                         <label class="form-label">2. De estos pacientes con Diabetes Mellitus Tipo 2, ¿a cuántos les formuló una Insulina basal?</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_4" value="Ninguno">
-                                            <label class="form-check-label" for="Ninguno">Ninguno</label>
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_4" value="a) Ninguno">
+                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_4" value="De 1 a 2">
-                                            <label class="form-check-label" for="De1a2">De 1 a 2</label>
+                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_4" value="b) De 1 a 2">
+                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_4" value="De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_4" value="c) De 3 a 5">
+                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_4" value="Mas de 6">
-                                            <label class="form-check-label" for="Masde6">Más de 6</label>
+                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_4" value="d) Mas de 6">
+                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
                                         </div>
                                     </div>
 
@@ -269,20 +269,20 @@ require '../logica/get_persona.php';
                                     <div class="mb-3">
                                         <label class="form-label">3. De estos pacientes con Insulina, ¿a cuántos les formuló una insulina degludec liraglutida?</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_5" value="Ninguno">
-                                            <label class="form-check-label" for="Ninguno">Ninguno</label>
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_5" value="a) Ninguno">
+                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_5" value="De 1 a 2">
-                                            <label class="form-check-label" for="De1a2">De 1 a 2</label>
+                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_5" value="b) De 1 a 2">
+                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_5" value="De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_5" value="c) De 3 a 5">
+                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_5" value="Mas de 6">
-                                            <label class="form-check-label" for="Masde6">Más de 6</label>
+                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_5" value="d) Mas de 6">
+                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
                                         </div>
                                     </div>
                                 </div>
@@ -291,20 +291,20 @@ require '../logica/get_persona.php';
                                     <div class="mb-3">
                                         <label class="form-label">2. De estos pacientes con Diabetes Mellitus Tipo 2, ¿a cuántos les formuló un GLP-1 inyectable u oral?</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_2" value="Ninguno">
-                                            <label class="form-check-label" for="Ninguno">Ninguno</label>
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_2" value="a) Ninguno">
+                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_2" value="De 1 a 2">
-                                            <label class="form-check-label" for="De1a2">De 1 a 2</label>
+                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_2" value="b) De 1 a 2">
+                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_2" value="De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_2" value="c) De 3 a 5">
+                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_2" value="Mas de 6">
-                                            <label class="form-check-label" for="Masde6">Más de 6</label>
+                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_2" value="d) Mas de 6">
+                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
                                         </div>
                                     </div>
 
@@ -312,40 +312,40 @@ require '../logica/get_persona.php';
                                     <div class="mb-3">
                                         <label class="form-label">3. De estos pacientes con GLP-1, ¿a cuántos les formuló un GLP1 oral?</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_3" value="Ninguno">
-                                            <label class="form-check-label" for="Ninguno">Ninguno</label>
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_3" value="a) Ninguno">
+                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_3" value="De 1 a 2">
-                                            <label class="form-check-label" for="De1a2">De 1 a 2</label>
+                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_3" value="b) De 1 a 2">
+                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_3" value="De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_3" value="c) De 3 a 5">
+                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_3" value="Mas de 6">
-                                            <label class="form-check-label" for="Masde6">Más de 6</label>
+                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_3" value="d) Mas de 6">
+                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
                                         </div>
                                     </div>
                                     <!-- Pregunta 4 -->
                                     <div class="mb-3">
                                         <label class="form-label">4. De estos pacientes con Diabetes Mellitus Tipo 2, ¿a cuántos les formuló una Insulina basal?</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_4" value="Ninguno">
-                                            <label class="form-check-label" for="Ninguno">Ninguno</label>
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_4" value="a) Ninguno">
+                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_4" value="De 1 a 2">
-                                            <label class="form-check-label" for="De1a2">De 1 a 2</label>
+                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_4" value="b) De 1 a 2">
+                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_4" value="De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_4" value="c) De 3 a 5">
+                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_4" value="Mas de 6">
-                                            <label class="form-check-label" for="Masde6">Más de 6</label>
+                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_4" value="d) Mas de 6">
+                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
                                         </div>
                                     </div>
 
@@ -353,20 +353,20 @@ require '../logica/get_persona.php';
                                     <div class="mb-3">
                                         <label class="form-label">5. De estos pacientes con Insulina, ¿a cuántos les formuló una insulina degludec liraglutida?</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_5" value="Ninguno">
-                                            <label class="form-check-label" for="Ninguno">Ninguno</label>
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_5" value="a) Ninguno">
+                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_5" value="De 1 a 2">
-                                            <label class="form-check-label" for="De1a2">De 1 a 2</label>
+                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_5" value="b) De 1 a 2">
+                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_5" value="De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_5" value="c) De 3 a 5">
+                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_5" value="Mas de 6">
-                                            <label class="form-check-label" for="Masde6">Más de 6</label>
+                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_5" value="d) Mas de 6">
+                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
                                         </div>
                                     </div>
                                 </div>
