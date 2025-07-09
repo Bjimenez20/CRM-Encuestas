@@ -6,14 +6,14 @@ ob_clean();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents('php://input'), true);
-    $documento = $data['documento'] ?? '';
+    $email = $data['email'] ?? '';
 
-    if (!empty($documento)) {
+    if (!empty($email)) {
         // Preparar la consulta
-        $stmt = $conex->prepare("SELECT * FROM personas WHERE telefono1 = ? OR telefono2 = ? OR telefono3 = ? OR telefono4 = ?");
+        $stmt = $conex->prepare("SELECT * FROM personas WHERE correo_electronico = ?");
         if ($stmt) {
             // Vincular el parámetro
-            $stmt->bind_param('ssss', $documento, $documento, $documento, $documento); // 's' indica tipo string
+            $stmt->bind_param('s', $email); // 's' indica tipo string
             $stmt->execute(); // Ejecutar la consulta
             $result = $stmt->get_result(); // Obtener el resultado
 
@@ -21,14 +21,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $persona = $result->fetch_assoc(); // Obtener los datos
                 echo json_encode([
                     'encontrado' => true,
-                    'mensaje' => 'Telefono encontrado.',
+                    'mensaje' => 'Correo electronico encontrado.',
                     'tipo' => 'success',
                     'persona' => $persona, // Puedes incluir los datos encontrados
                 ]);
             } else {
                 echo json_encode([
                     'encontrado' => false,
-                    'mensaje' => 'Telefono no encontrado.',
+                    'mensaje' => 'Correo electronico no encontrado.',
                     'tipo' => 'error',
                 ]);
             }
@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         echo json_encode([
             'encontrado' => false,
-            'mensaje' => 'Telefono no válido.',
+            'mensaje' => 'Correo electronico no válido.',
             'tipo' => 'error',
         ]);
     }

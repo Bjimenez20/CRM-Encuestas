@@ -82,7 +82,7 @@ require '../logica/get_persona.php';
                                 </div>
                                 <div class="col">
                                     <label for="nombre_medico" class="fw-bold">Nombre Medico</label>
-                                    <input type="text" class="form-control" name="nombre_medico" id="nombre_medico" value="<?= htmlspecialchars($persona['nombre'] . ' ' . $persona['apellido']) ?>" readonly>
+                                    <input type="text" class="form-control" name="nombre_medico" id="nombre_medico" value="<?= htmlspecialchars($persona['nombre_completo']) ?>" readonly>
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -102,21 +102,7 @@ require '../logica/get_persona.php';
                                         <input type="text" class="form-control" name="telefono2" id="telefono2" value="<?= htmlspecialchars($persona['telefono2']) ?>" readonly>
                                     </div>
                                 <?php endif; ?>
-                                <?php if (!empty($persona['telefono3'])): ?>
-                                    <div class="col">
-                                        <label for="telefono3" class="fw-bold">Teléfono 3</label>
-                                        <input type="text" class="form-control" name="telefono3" id="telefono3" value="<?= htmlspecialchars($persona['telefono3']) ?>" readonly>
-                                    </div>
-                                <?php endif; ?>
                             </div>
-                            <?php if (!empty($persona['telefono4'])): ?>
-                                <div class="row mb-3">
-                                    <div class="col">
-                                        <label for="telefono4" class="fw-bold">Teléfono 4</label>
-                                        <input type="text" class="form-control" name="telefono4" id="telefono4" value=" <?= htmlspecialchars($persona['telefono4']) ?>" readonly>
-                                    </div>
-                                </div>
-                            <?php endif; ?>
                             <div class="row mb-3">
                                 <div class="col">
                                     <label for="encuesta_efectiva" class="fw-bold">Encuesta Efectiva<span class="fw-bold text-danger">*</span></label>
@@ -146,8 +132,15 @@ require '../logica/get_persona.php';
                                         <option value="Telefono fuera de servicio">Telefono fuera de servicio</option>
                                     </select>
                                 </div>
+                                <?php
+                                if (htmlspecialchars($persona['especialidad']) == 'Cardiometabolico') {
+                                    $idespecialidad = '1';
+                                } else {
+                                    $idespecialidad = '2';
+                                }
+                                ?>
                                 <div class="col" id="tipo_encuesta" style="display: none;">
-                                    <label for="cuestionario" class="fw-bold">Cuestionario<span class="fw-bold text-danger">*</span></label>
+                                    <label for="cuestionario" class="fw-bold">Seleccione su especialidad<span class="fw-bold text-danger">*</span></label>
                                     <select class="form-control" name="cuestionario" id="cuestionario">
                                         <option value="" disabled selected>Seleccione un cuestionario</option>
                                         <?php
@@ -181,191 +174,192 @@ require '../logica/get_persona.php';
                                     <input type="text" id="cuestionarioselect" name="cuestionarioselect">
                                     <input type="text" id="encuesta_efectiva" name="encuesta_efectiva">
                                 </div>
-                                <div class="mb-3">
-                                    <label class="form-label">1. De los pacientes que atiende en una semana, ¿Cuántos de ellos tienen Diabetes Mellitus Tipo 2?</label><br>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" id="De1a20" name="respuesta_1" value="a) De 1 a 20">
-                                        <label class="form-check-label" for="De1a20">a) De 1 a 20</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" id="De21a20" name="respuesta_1" value="b) De 21 a 40">
-                                        <label class="form-check-label" for="De21a20">b) De 21 a 40</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" id="De41a60" name="respuesta_1" value="c) De 41 a 60">
-                                        <label class="form-check-label" for="De41a60">c) De 41 a 60</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" id="Masde60" name="respuesta_1" value="d) Mas de 60">
-                                        <label class="form-check-label" for="Masde60">d) Más de 60</label>
-                                    </div>
-                                </div>
                                 <div id="1" style="display: none;">
+                                    <!-- Pregunta 1 -->
+                                    <div class="mb-3">
+                                        <label class="form-label">1. ¿Cuántos pacientes atiende en una semana? (Por cualquier motivo de consulta)</label><br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="De1a20" name="res_1_cu_1" value="a) De 1 a 20">
+                                            <label class="form-check-label" for="De1a20">a) De 1 a 20</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="De21a30" name="res_1_cu_1" value="b) De 21 a 30">
+                                            <label class="form-check-label" for="De21a30">b) De 21 a 30</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="De31a50" name="res_1_cu_1" value="c) De 31 a 50">
+                                            <label class="form-check-label" for="De31a50">c) De 31 a 50</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="De51a70" name="res_1_cu_1" value="d) De 51 a 70">
+                                            <label class="form-check-label" for="De51a70">d) De 51 a 70</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="Masde70" name="res_1_cu_1" value="e) Mas de 70">
+                                            <label class="form-check-label" for="Masde70">e) Más de 70</label>
+                                        </div>
+                                    </div>
                                     <!-- Pregunta 2 -->
                                     <div class="mb-3">
-                                        <label class="form-label">2. De estos pacientes con Diabetes Mellitus Tipo 2, ¿a cuántos les formuló un GLP-1 inyectable u oral?</label><br>
+                                        <label class="form-label">2. De cada 10 pacientes que atiende en la semana, ¿Cuántos de ellos tienen?</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_2" value="a) Ninguno">
-                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
+                                            <input class="form-check-input" type="radio" id="Diabetes_obesidad" name="res_2_cu_1" value="Diabetes y obesidad">
+                                            <label class="form-check-label" for="Diabetes_obesidad">Diabetes y obesidad</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_2" value="b) De 1 a 2">
-                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
+                                            <input class="form-check-input" type="radio" id="Solo_diabetes" name="res_2_cu_1" value="Solo diabetes">
+                                            <label class="form-check-label" for="Solo_diabetes">Solo diabetes</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_2" value="c) De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="Solo_sobrepeso_obesidad" name="res_2_cu_1" value="Solo sobrepeso u obesidad">
+                                            <label class="form-check-label" for="Solo_sobrepeso_obesidad">Solo sobrepeso u obesidad</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_2" value="d) Mas de 6">
-                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
+                                            <input class="form-check-input" type="radio" id="Ninguna" name="res_2_cu_1" value="Ninguna de los anteriores">
+                                            <label class="form-check-label" for="Ninguna">Ninguna de los anteriores</label>
                                         </div>
                                     </div>
 
                                     <!-- Pregunta 3 -->
                                     <div class="mb-3">
-                                        <label class="form-label">3. De estos pacientes con GLP-1, ¿a cuántos les formuló un GLP1 oral?</label><br>
+                                        <label class="form-label">3. De 10 de esos pacientes con Diabetes y/o sobrepeso ¿a cuántos les formuló Saxenda® Liraglutida?</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_3" value="a) Ninguno">
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="res_3_cu_1" value="a) Ninguno">
                                             <label class="form-check-label" for="Ninguno">a) Ninguno</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_3" value="b) De 1 a 2">
+                                            <input class="form-check-input" type="radio" id="De1a2" name="res_3_cu_1" value="b) De 1 a 2">
                                             <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_3" value="c) De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="De3a6" name="res_3_cu_1" value="c) De 3 a 6">
+                                            <label class="form-check-label" for="De3a6">c) De 3 a 6</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_3" value="d) Mas de 6">
+                                            <input class="form-check-input" type="radio" id="Masde6" name="res_3_cu_1" value="d) Mas de 6">
+                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
+                                        </div>
+                                    </div>
+                                    <!-- Pregunta 4 -->
+                                    <div class="mb-3">
+                                        <label class="form-label">4. De 10 de sus pacientes con Diabetes Mellitus Tipo 2, ¿a cuántos les formuló Ozempic® Semaglutida Inyectable semanal?</label><br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="res_4_cu_1" value="a) Ninguno">
+                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="De1a2" name="res_4_cu_1" value="b) De 1 a 2">
+                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="De3a6" name="res_4_cu_1" value="c) De 3 a 6">
+                                            <label class="form-check-label" for="De3a6">c) De 3 a 6</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="Masde6" name="res_4_cu_1" value="d) Mas de 6">
+                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
+                                        </div>
+                                    </div>
+                                    <!-- Pregunta 5 -->
+                                    <div class="mb-3">
+                                        <label class="form-label">5. De 10 de sus pacientes con Diabetes Mellitus Tipo 2, ¿a cuántos les formuló Rybelsus® Semaglutida Oral?</label><br>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="res_5_cu_1" value="a) Ninguno">
+                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="De1a2" name="res_5_cu_1" value="b) De 1 a 2">
+                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="De3a6" name="res_5_cu_1" value="c) De 3 a 6">
+                                            <label class="form-check-label" for="De3a6">c) De 3 a 6</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" id="Masde6" name="res_5_cu_1" value="d) Mas de 6">
                                             <label class="form-check-label" for="Masde6">d) Más de 6</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="2" style="display: none;">
-                                    <!-- Pregunta 4 -->
+                                    <!-- Pregunta 1 -->
                                     <div class="mb-3">
-                                        <label class="form-label">2. De estos pacientes con Diabetes Mellitus Tipo 2, ¿a cuántos les formuló una Insulina basal?</label><br>
+                                        <label class="form-label">1. ¿Cuántos pacientes atiende en una semana? (Por cualquier motivo de consulta)</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_4" value="a) Ninguno">
-                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
+                                            <input class="form-check-input" type="radio" id="De1a20" name="res_1_cu_2" value="a) De 1 a 20">
+                                            <label class="form-check-label" for="De1a20">a) De 1 a 20</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_4" value="b) De 1 a 2">
-                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
+                                            <input class="form-check-input" type="radio" id="De21a30" name="res_1_cu_2" value="b) De 21 a 30">
+                                            <label class="form-check-label" for="De21a30">b) De 21 a 30</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_4" value="c) De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="De31a50" name="res_1_cu_2" value="c) De 31 a 50">
+                                            <label class="form-check-label" for="De31a50">c) De 31 a 50</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_4" value="d) Mas de 6">
-                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
+                                            <input class="form-check-input" type="radio" id="Masde50" name="res_1_cu_2" value="d) Mas de 50">
+                                            <label class="form-check-label" for="Masde50">d) Más de 50</label>
                                         </div>
                                     </div>
-
-                                    <!-- Pregunta 5 -->
-                                    <div class="mb-3">
-                                        <label class="form-label">3. De estos pacientes con Insulina, ¿a cuántos les formuló una insulina degludec liraglutida?</label><br>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_5" value="a) Ninguno">
-                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_5" value="b) De 1 a 2">
-                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_5" value="c) De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_5" value="d) Mas de 6">
-                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="3" style="display: none;">
                                     <!-- Pregunta 2 -->
                                     <div class="mb-3">
-                                        <label class="form-label">2. De estos pacientes con Diabetes Mellitus Tipo 2, ¿a cuántos les formuló un GLP-1 inyectable u oral?</label><br>
+                                        <label class="form-label">2. De cada 10 pacientes que atiende en la semana, ¿Cuántos de ellos tienen sobrepeso u obesidad?</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_2" value="a) Ninguno">
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="res_2_cu_2" value="a) Ninguno">
                                             <label class="form-check-label" for="Ninguno">a) Ninguno</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_2" value="b) De 1 a 2">
+                                            <input class="form-check-input" type="radio" id="De1a2" name="res_2_cu_2" value="b) De 1 a 2">
                                             <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_2" value="c) De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="De3a6" name="res_2_cu_2" value="c) De 3 a 6">
+                                            <label class="form-check-label" for="De3a6">c) De 3 a 6</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_2" value="d) Mas de 6">
+                                            <input class="form-check-input" type="radio" id="Masde6" name="res_2_cu_2" value="d) Mas de 6">
                                             <label class="form-check-label" for="Masde6">d) Más de 6</label>
                                         </div>
                                     </div>
 
                                     <!-- Pregunta 3 -->
                                     <div class="mb-3">
-                                        <label class="form-label">3. De estos pacientes con GLP-1, ¿a cuántos les formuló un GLP1 oral?</label><br>
+                                        <label class="form-label">3. De 10 de sus pacientes con Sobrepeso u obesidad, ¿a cuántos les formuló un tratamiento farmacológico?</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_3" value="a) Ninguno">
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="res_3_cu_2" value="a) Ninguno">
                                             <label class="form-check-label" for="Ninguno">a) Ninguno</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_3" value="b) De 1 a 2">
+                                            <input class="form-check-input" type="radio" id="De1a2" name="res_3_cu_2" value="b) De 1 a 2">
                                             <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_3" value="c) De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="De3a6" name="res_3_cu_2" value="c) De 3 a 6">
+                                            <label class="form-check-label" for="De3a6">c) De 3 a 6</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_3" value="d) Mas de 6">
+                                            <input class="form-check-input" type="radio" id="Masde6" name="res_3_cu_2" value="d) Mas de 6">
                                             <label class="form-check-label" for="Masde6">d) Más de 6</label>
                                         </div>
                                     </div>
                                     <!-- Pregunta 4 -->
                                     <div class="mb-3">
-                                        <label class="form-label">4. De estos pacientes con Diabetes Mellitus Tipo 2, ¿a cuántos les formuló una Insulina basal?</label><br>
+                                        <label class="form-label">4. De estos pacientes que formulo farmacológicamente, ¿a cuántos les formuló Saxenda® Liraglutida?</label><br>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_4" value="a) Ninguno">
+                                            <input class="form-check-input" type="radio" id="Ninguno" name="res_4_cu_2" value="a) Ninguno">
                                             <label class="form-check-label" for="Ninguno">a) Ninguno</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_4" value="b) De 1 a 2">
+                                            <input class="form-check-input" type="radio" id="De1a2" name="res_4_cu_2" value="b) De 1 a 2">
                                             <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_4" value="c) De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
+                                            <input class="form-check-input" type="radio" id="De3a6" name="res_4_cu_2" value="c) De 3 a 6">
+                                            <label class="form-check-label" for="De3a6">c) De 3 a 6</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_4" value="d) Mas de 6">
-                                            <label class="form-check-label" for="Masde6">d) Más de 6</label>
-                                        </div>
-                                    </div>
-
-                                    <!-- Pregunta 5 -->
-                                    <div class="mb-3">
-                                        <label class="form-label">5. De estos pacientes con Insulina, ¿a cuántos les formuló una insulina degludec liraglutida?</label><br>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Ninguno" name="respuesta_5" value="a) Ninguno">
-                                            <label class="form-check-label" for="Ninguno">a) Ninguno</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De1a2" name="respuesta_5" value="b) De 1 a 2">
-                                            <label class="form-check-label" for="De1a2">b) De 1 a 2</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="De3a5" name="respuesta_5" value="c) De 3 a 5">
-                                            <label class="form-check-label" for="De3a5">c) De 3 a 5</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="Masde6" name="respuesta_5" value="d) Mas de 6">
+                                            <input class="form-check-input" type="radio" id="Masde6" name="res_4_cu_2" value="d) Mas de 6">
                                             <label class="form-check-label" for="Masde6">d) Más de 6</label>
                                         </div>
                                     </div>
@@ -459,6 +453,69 @@ require '../logica/get_persona.php';
 
             formInsert.addEventListener('submit', function(e) {
                 e.preventDefault();
+
+                const cuestionarioSeleccionado = document.getElementById('cuestionarioselect').value;
+
+                // Limpiar estilos anteriores
+                document.querySelectorAll('#formEncuesta .mb-3').forEach(div => {
+                    const label = div.querySelector('label');
+                    if (label) label.style.color = ''; // restaurar color
+                });
+
+                // Validar solo si se seleccionó encuesta 1 o 2
+                let camposObligatorios = [];
+
+                if (cuestionarioSeleccionado === '1') {
+                    camposObligatorios = [
+                        'res_1_cu_1',
+                        'res_2_cu_1',
+                        'res_3_cu_1',
+                        'res_4_cu_1',
+                        'res_5_cu_1'
+                    ];
+                } else if (cuestionarioSeleccionado === '2') {
+                    camposObligatorios = [
+                        'res_1_cu_2', // Se repite en ambas
+                        'res_2_cu_2',
+                        'res_3_cu_2',
+                        'res_4_cu_2'
+                    ];
+                }
+
+                let faltanCampos = [];
+
+                camposObligatorios.forEach(nombre => {
+                    const opciones = document.querySelectorAll(`input[name="${nombre}"]`);
+                    const seleccionado = Array.from(opciones).some(opcion => opcion.checked);
+
+                    const contenedor = opciones[0]?.closest('.mb-3');
+                    const labelPrincipal = contenedor?.querySelector('label');
+
+                    if (!seleccionado) {
+                        faltanCampos.push(nombre);
+                        if (labelPrincipal) labelPrincipal.style.color = 'red'; // marcar en rojo
+                    }
+                });
+
+                if (faltanCampos.length > 0) {
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Campos incompletos',
+                        text: 'Por favor responde todas las preguntas obligatorias antes de enviar la encuesta.'
+                    });
+
+                    // Scroll hacia la primera pregunta faltante (opcional)
+                    const primeraPregunta = document.querySelector(`input[name="${faltanCampos[0]}"]`);
+                    if (primeraPregunta) {
+                        primeraPregunta.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'center'
+                        });
+                    }
+
+                    return;
+                }
+
                 const formData = new FormData(formInsert);
 
                 axios.post('../logica/procesar_encuesta.php', formData)

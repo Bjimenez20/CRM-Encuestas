@@ -27,7 +27,7 @@
                             <table id="tablaEncuestas" class="table table-hover table-bordered align-middle">
                                 <thead class="table-light">
                                     <tr>
-                                        <th>ID</th>
+                                        <th>#</th>
                                         <th>Médico</th>
                                         <th>Encuesta Efectiva</th>
                                         <th>Encuesta</th>
@@ -72,10 +72,7 @@
                         "data": "id_res"
                     },
                     {
-                        "data": null,
-                        "render": function(data, type, row) {
-                            return `${row.nombre} ${row.apellido}`;
-                        }
+                        "data": "nombre_completo",
                     },
                     {
                         "data": "encuesta_efectiva"
@@ -109,8 +106,7 @@
                     "url": "//cdn.datatables.net/plug-ins/1.11.5/i18n/Spanish.json"
                 },
                 "createdRow": function(row, data, dataIndex) {
-                    if (data.nombre_encuesta !== "Cuestionario 3") {
-                        $('td', row).eq(7).addClass('highlight-red');
+                    if (data.nombre_encuesta == "Nuevas Especialidades") {
                         $('td', row).eq(8).addClass('highlight-red');
                     }
                     if (data.encuesta_efectiva !== "SI") {

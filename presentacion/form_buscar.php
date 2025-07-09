@@ -67,11 +67,11 @@ require '../datos/conex.php';
             <form>
                 <div class="row-reverse">
                     <div class="col-6 mb-3">
-                        <label for="documento" class="form-label">Número de Teléfono</label>
-                        <input type="text" class="form-control" name="documento" id="documento" required>
+                        <label for="correo" class="form-label">Correo Electronico</label>
+                        <input type="email" class="form-control" name="correo" id="correo" required>
                     </div>
                     <div class="col">
-                        <button type="submit" id="btnConsultar" class="btn btn-primary">Consultar Teléfono</button>
+                        <button type="submit" id="btnConsultar" class="btn btn-primary">Consultar</button>
                     </div>
                 </div>
             </form>
@@ -88,17 +88,17 @@ require '../datos/conex.php';
             btnConsultar.addEventListener('click', function(e) {
                 e.preventDefault(); // Evita que el formulario se envíe por defecto
 
-                let documentInput = document.getElementById("documento");
+                let emailInput = document.getElementById("correo");
 
-                let dateDocument = {
-                    documento: document.getElementById("documento").value
+                let dateEmail = {
+                    email: document.getElementById("correo").value
                 };
 
-                if (documentInput.value.length > 0) {
-                    documentInput.classList.add('is-valid');
-                    documentInput.classList.remove('is-invalid');
+                if (emailInput.value.length > 0) {
+                    emailInput.classList.add('is-valid');
+                    emailInput.classList.remove('is-invalid');
 
-                    axios.post('../logica/verificar_documento.php', dateDocument)
+                    axios.post('../logica/verificar_email.php', dateEmail)
                         .then(function(response) {
                             console.log(response)
                             Swal.fire({
@@ -109,7 +109,7 @@ require '../datos/conex.php';
                             }).then((result) => {
                                 if (response.data.encontrado) {
                                     // Redirige si el documento fue encontrado
-                                    window.location.href = `./encuesta.php?documento=${dateDocument.documento}`;
+                                    window.location.href = `./encuesta.php?email=${dateEmail.email}`;
                                 } else {
                                     window.location.href = './registro_persona.php';
                                 }
@@ -124,8 +124,8 @@ require '../datos/conex.php';
                             });
                         });
                 } else {
-                    documentInput.classList.add('is-invalid');
-                    documentInput.classList.remove('is-valid');
+                    emailInput.classList.add('is-invalid');
+                    emailInput.classList.remove('is-valid');
                 }
             });
         });

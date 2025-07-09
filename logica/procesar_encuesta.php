@@ -2,11 +2,6 @@
 require('../logica/session.php');
 require('../datos/conex.php');
 
-$respuesta_1 = $_POST['respuesta_1'] ?? '';
-$respuesta_2 = $_POST['respuesta_2'] ?? '';
-$respuesta_3 = $_POST['respuesta_3'] ?? '';
-$respuesta_4 = $_POST['respuesta_4'] ?? '';
-$respuesta_5 = $_POST['respuesta_5'] ?? '';
 $encuesta = $_POST['encuesta_efectiva'] ?? '';
 $persona = $_POST['medico_id'] ?? '';
 $cuestionarioSeleccionado = $_POST['cuestionarioselect'] ?? '';
@@ -15,27 +10,28 @@ $nota = $_POST['nota'] ?? '';
 
 if ($encuesta == 'SI') {
     switch ($cuestionarioSeleccionado) {
+
         case '1':
-            $sql = "INSERT INTO respuestas (repuesta_1, repuesta_2, repuesta_3, id_persona_fk, id_cuestionarios_fk, encuesta_efectiva) VALUES (?, ?, ?, ?, ?, ?)";
+            $respuesta_1 = $_POST['res_1_cu_1'] ?? '';
+            $respuesta_2 = $_POST['res_2_cu_1'] ?? '';
+            $respuesta_3 = $_POST['res_3_cu_1'] ?? '';
+            $respuesta_4 = $_POST['res_4_cu_1'] ?? '';
+            $respuesta_5 = $_POST['res_5_cu_1'] ?? '';
+            $sql = "INSERT INTO respuestas (repuesta_1, repuesta_2, repuesta_3, repuesta_4, repuesta_5, id_persona_fk, id_cuestionarios_fk, encuesta_efectiva) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
             $stmt = $conex->prepare($sql);
             if (!$stmt) {
                 echo json_encode(['error' => 'Error al preparar la consulta: ' . $conex->error]);
                 exit;
             }
-            $stmt->bind_param("ssssss", $respuesta_1, $respuesta_2, $respuesta_3, $persona, $cuestionarioSeleccionado, $encuesta);
+            $stmt->bind_param("ssssssss", $respuesta_1, $respuesta_2, $respuesta_3, $respuesta_4, $respuesta_5, $persona, $cuestionarioSeleccionado, $encuesta);
             break;
 
         case '2':
-            $sql = "INSERT INTO respuestas (repuesta_1, repuesta_2, repuesta_3, id_persona_fk, id_cuestionarios_fk, encuesta_efectiva) VALUES (?, ?, ?, ?, ?, ?)";
-            $stmt = $conex->prepare($sql);
-            if (!$stmt) {
-                echo json_encode(['error' => 'Error al preparar la consulta: ' . $conex->error]);
-                exit;
-            }
-            $stmt->bind_param("ssssss", $respuesta_1, $respuesta_4, $respuesta_5, $persona, $cuestionarioSeleccionado, $encuesta);
-            break;
-
-        case '3':
+            $respuesta_1 = $_POST['res_1_cu_2'] ?? '';
+            $respuesta_2 = $_POST['res_2_cu_2'] ?? '';
+            $respuesta_3 = $_POST['res_3_cu_2'] ?? '';
+            $respuesta_4 = $_POST['res_4_cu_2'] ?? '';
+            $respuesta_5 = '' ?? '';
             $sql = "INSERT INTO respuestas (repuesta_1, repuesta_2, repuesta_3, repuesta_4, repuesta_5, id_persona_fk, id_cuestionarios_fk, encuesta_efectiva) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
             $stmt = $conex->prepare($sql);
             if (!$stmt) {
