@@ -13,9 +13,9 @@
 
     <style>
         body {
-            background: url(../layouts/img/bbbackground.png) no-repeat center center fixed;
+            background: url(../layouts/img/1.jpg) no-repeat center center fixed;
             background-size: cover;
-            backdrop-filter: blur(5px);
+            /* backdrop-filter: blur(5px); */
         }
 
         .login-container {
